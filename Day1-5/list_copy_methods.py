@@ -41,21 +41,67 @@ print(list2)
 
 # List packing and unpacking
 # list unpacking
-list1=[10,5,8,6]
-# a,b,c,d=list1 # var must be equal with number of elements in the list 
+# list1=[10,5,8,6]
+# # a,b,c,d=list1 # var must be equal with number of elements in the list 
+# # print(a)
+
+# """ a,*b=list1 # * is used when var are less i.e when unpacking is targeted to created a list
+
 # print(a)
+# print(b) """
 
-""" a,*b=list1 # * is used when var are less i.e when unpacking is targeted to created a list
+# # List packing
+# # in simple merging 2 or more lists
+# list2=[8,6,7]
+# list3=[*list1,*list2] # * is a destructuring operator
 
-print(a)
-print(b) """
+# print(list3)
+from copy import deepcopy
 
-# List packing
-# in simple merging 2 or more lists
-list2=[8,6,7]
-list3=[*list1,*list2] # * is a destructuring operator
+l1=[1,2,3,[4,5],6]
+l2=l1.copy()
+print("list 1 ",l1)
+print("list2",l2)
+# l2[-2].append(7)
+# print("address of list 1",id(l1))
+# print("address of list 2",id(l2))
+# print()
+# print("address of 1st outer list elements",id(l1[-1]))
+# print("address of 2nd outer list elements",id(l2[-1]))
+print()
+# print("address of 1st inner list",id(l1[-2]))
+# print("address of 2nd inner list ",id(l2[-2]))
+print()
+# print("address of l1 inner list elements",id(l1[-2][1]))
+# print("address  of l2 inner list elements",id(l2[-2][1]))
+print(l1)
+print(l2)
 
-print(list3)
+print()
+print()
+
+l3=deepcopy(l1)
+l3.append(10)
+print("list 1 ",l1)
+print("list3",l3)
+print("list2",l3)
+
+# print("address of list 1",id(l1))
+# print("address of list 3",id(l3))
+# print()
+# print("address of 1st outer list",id(l1[-1]))
+# print("address of 3st outer list",id(l3[-1]))
+# print()
+# print("address of inner list",id(l1[-2]))
+# print("address of 3rd inner list ",id(l3[-2]))
+# print()
+# print("address of inner list elements",id(l1[-2][1]))
+# print("address of inner list elements",id(l3[-2][1]))
+
+
+
+
+
 
 
 
