@@ -19,7 +19,21 @@
 #3 combination slicing use both negative and positive values 
 
 
-t1=(1,5,8,9,6,3)
-e1=t1[::-1]
-print(e1)
+# t1=(1,5,8,9,6,3)
+# e1=t1[::-1]
+# print(e1)\
+
+a="1056"
+b="Abc"
+print(a.lower())
+print(b.lower())
+
+
+if type(a)==int:
+    print("OK")
+else:
+    print("NOT OK")
+
+
+
 
