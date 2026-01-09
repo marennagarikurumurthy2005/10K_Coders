@@ -27,7 +27,18 @@ SELECT * from student JOIN marks on student.`Number`=marks.`Number`;
 # union , union all is used when want to join left and right join
 
 
+DELIMITER $$
+CREATE Trigger t1
+AFTER INSERT on student
+for EACH ROW
+begin
+INSERT into marks(`Number`) VALUES(NEW.NUMBER);
+END$$
+DELIMITER;
 
+INSERT into student VALUES(780,"Murthy");
+
+SELECT * from marks;
 
 
 
