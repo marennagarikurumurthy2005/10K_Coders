@@ -62,15 +62,15 @@
 
 
 # second largest
-# num1=10
-# num2=2
-# num3=3
-# sum=num1+num2+num3
+num1=10
+num2=2
+num3=3
+sum=num1+num2+num3
 
-# maxi=max(num1,num2,num3)
-# mini=min(num1,num2,num3)
-# second=sum-(maxi+mini)
-# print(second)
+maxi=max(num1,num2,num3)
+mini=min(num1,num2,num3)
+second=sum-(maxi+mini)
+print(second)
 
 # num1=10
 # num2=20
