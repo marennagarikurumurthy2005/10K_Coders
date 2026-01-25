@@ -89,7 +89,72 @@ HAVING AVG(amount)>5000;
 
 SELECT * from rrbh; 
 
-SELECT * from rrbh WHERE Name in ("MK","RK"); 
+SELECT * from rrbh WHERE Name in ("MK","RK");
+
+
+
+--  conditional commands case, if , COALESCE , nullif
+
+show TABLEs;
+
+SELECT * from marks;
+SELECT `Number`,marks,
+CASE 
+    WHEN marks>=80 THEN "A"
+    WHEN marks>=60 THEN "B"
+
+
+    ELSE  "C"
+END as grade
+
+from marks;
+
+SELECT `Number`,marks, IF(marks>45,"Pass","fail") as Grade from marks;
+
+SELECT Number, COALESCE(marks,"absent") as marks from marks;
+
+
+SELECT NULLIF(10,10);  -- compares a and b if equals prints null else a
+SELECT NULLIF(10,5);
+
+--  logical operators and , or , not
+--  comparision operators >=,<=,<,> etc
+--  arithmetic +,/,*,-
+--  string functions concat,substring,length,upper,lower
+--  date as now()
+
+
+
+--  INDEX
+-- Speeds up search.
+-- CREATE INDEX idx_name ON students(name);
+-- DROP INDEX idx_name ON students;
+
+
+--  constraints unique,primary,default,check,notnull,reference,foreign etc
+
+-- nested queries , union etc
+
+SELECT * from fam;
+SELECT * from det;
+
+-- DELETE CONSTRAINT 
+ALTER TABLE det
+DROP FOREIGN KEY det_ibfk_1;
+
+SHOW CREATE TABLE det;
+
+
+-- joins,
+-- triggers,
+-- procedures
+-- Views
+-- DCL
+-- TCL
+
+
+
+
 
 
 
