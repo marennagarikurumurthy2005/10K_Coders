@@ -1,14 +1,18 @@
-dici={1:{"username":"mk@2005","password":"mk@2005","otp":1234,"amount":40000}}
+dici={
+    1:{"username":"mk@2005","password":"mk@2005","otp":1234,"amount":40000},
+    2:{"username":"mk1@2005","password":"mk1@2005","otp":5678,"amount":40000},
+
+    }
 
 
 while True:
     name=input("username")
     password=input("password")
     otp=int(input("otp"))
-    user={"username":name,"password":password,"otp":otp}
+    
     for i in dici:
         extra=dici[i]
-        print(extra)
+        # print(extra)
         if name == extra["username"] and password == extra["password"] and otp == extra["otp"]:
             print("Your balance", extra["amount"])
             avail_bal=extra["amount"]
@@ -20,11 +24,10 @@ while True:
                 print("debit success")
                 print("current",net)
             exit()
-        else:
-            print("invalide credits")
-
-
-            exit()
+        
+    else:
+        print("invalid credits ")
+        exit()
 
             
     
