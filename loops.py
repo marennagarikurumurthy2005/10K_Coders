@@ -19,13 +19,41 @@
 #     i-=1
 
 
-i=int(input())
-count=0
-if i<10:
-    count+=1
-else:
-    while i>0:
-        count+=1
-        i//=10
-print(count)
+# i=int(input())
+# count=0
+# if i<10:
+#     count+=1
+# else:
+#     while i>0:
+#         count+=1
+#         i//=10
+# print(count)
+
+
+
+# sum=0
+# for i in range(101):
+#     sum+=i
+
+# print(sum)
+
+# i=1 
+# while i<=100:
+#     sum+=i
+#     i+=1
+# print(sum)
+
+# sum=0
+# for i in range(40,61):
+#     sum+=i
+
+# print(sum)
+sum=0
+i=40
+while i<=60:
+    sum+=i
+    i+=1
+print(sum)
+
+
 
