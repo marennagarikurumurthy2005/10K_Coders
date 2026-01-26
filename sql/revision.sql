@@ -151,6 +151,7 @@ SHOW CREATE TABLE det;
 -- Views
 -- DCL
 -- TCL
+-- Normalization
 
 
 
