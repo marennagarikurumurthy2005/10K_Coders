@@ -48,12 +48,40 @@
 #     sum+=i
 
 # print(sum)
-sum=0
-i=40
-while i<=60:
-    sum+=i
+# sum=0
+# i=40
+# while i<=60:
+#     sum+=i
+#     i+=1
+# print(sum)
+
+
+# sum=(100*101)/2
+# print(int(sum))
+
+# even numbers
+# for i in range(0,201,2):
+#     print(i)
+# odd
+
+# for i in range(1,201,2):
+#     print(i)
+
+# using while loop
+# i=1
+# while i<=100:
+#     if i%2==0:
+#         print(i)
+#     i+=1
+
+i=1
+while i<=100:
+    if i%2!=0:
+        print(i)
     i+=1
-print(sum)
+
+
+
 
 
 
