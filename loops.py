@@ -141,8 +141,59 @@
 
 
 
-    
+# DAY 2 part 2------------------------------------------------
 
+
+
+# new_num=0
+# num=123
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     new_num=new_num*10+rem
+# print(new_num)
+
+
+# user=int(input())
+# maxi=0
+# extra=0
+# while user>0:
+#     extra=user%10
+#     if maxi>=extra:
+#         maxi=maxi
+#     else:
+#         maxi=extra
+#     user//=10
+# print(maxi)
+
+
+# user=int(input())
+# mini=9
+# extra=0
+# while user>0:
+#     extra=user%10
+#     if mini<=extra:
+#         mini=mini
+#     else:
+#         mini=extra
+#     user//=10
+# print(mini)
+
+
+
+
+# new_num=0
+# num=12321
+# temp=num
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     new_num=new_num*10+rem
+# print(new_num)
+# if new_num==temp:
+#     print("palin")
+# else:
+#     print("not a palin")
 
 
 
