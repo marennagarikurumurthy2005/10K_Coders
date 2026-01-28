@@ -248,6 +248,65 @@
 #     if num%i==0:
 #         print(i)
         
+# Day3 phase-2---------------------------------------------------------------
+# num=27
+# sum=0
+# for i in range(1,num):
+#     if num%i==0:
+#         sum+=i
+# if sum==num:
+#     print("Perfect Number")
+# else:
+#     print("Not a perfect Number")
+
+# for i in range(1,10001):
+#     sum=0
+#     for j in range(1,i):
+#         if i%j==0:
+#             sum+=j
+#     if i==sum:
+#         print(i)
+
+
+# strong numbers validation
+# factorial of a number with individual digits as 
+# 145 as 1!+4!+5! must equals with 145
+# num=145
+# temp=num
+# sum=0
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     net=1
+#     for i in range(1,rem+1):
+#         net*=i
+#     sum+=net
+# if sum==temp:
+#     print("Strong Number")
+# else:
+#     print("Not a strong number")
+
+
+
+for i in range(1,1000000):
+    temp=i
+    sum=0
+    while i>0:
+        rem=i%10
+        i//=10
+        net=1
+        for j in range(1,rem+1):
+            net*=j
+        sum+=net
+    if sum==temp:
+        print(temp)
+
+    
+
+
+
+
+
 
             
         
