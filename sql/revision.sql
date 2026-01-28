@@ -145,12 +145,58 @@ DROP FOREIGN KEY det_ibfk_1;
 SHOW CREATE TABLE det;
 
 
+
+-- DCL grant and revoke
+show DATABASEs;
+GRANT SELECT,INSERT on hostel to user1;
+REVOKE insert on hostel FROM user1;
+
+
+-- TCL savepoint , commit , rollback for insert,delete,update i.e only for data 
+-- not for table architecture 
+-- (not for drop i.e only for temp commits )\
+-- so stop autocommits
+
+set autocommit=0;
+SELECT * from hostel;
+INSERT into hostel VALUES(2,"KRBH",5500,"avg");
+
+SAVEPOINT a;
+
+COMMIT;
+
+SELECT * from hostel;
+ROLLBACK;
+INSERT INTO hostel VALUES("3","DRBH",5000,"avg");
+SAVEPOINT b;
+
+INSERT into hostel VALUES("4","JRBH",6000,"good");
+
+ROLLBACK to b;
+
+ROLLBACK to a;
+
+SELECT * from hostel;
+COMMIT;
+ROLLBACK;
+
+
+
+
 -- joins,
+-- innerjoin
+-- left join , right join combines outerjoin (union, union all)
+-- natural join
+-- join
+-- full 
+-- cross
+
+
+
 -- triggers,
 -- procedures
 -- Views
--- DCL
--- TCL
+
 -- Normalization
 
 
