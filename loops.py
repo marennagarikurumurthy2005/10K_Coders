@@ -196,7 +196,62 @@
 #     print("not a palin")
 
 
+# Day3 Phase-1----------------------------------------------
 
+# num=int(input())
+# count=0
+# if num<=1:
+#     count=0
+# else:
+#     for i in range(2,num//2):
+#         if num%i==0:
+#             count+=1
+#             break
+# if count<=0:
+#     print("prime")
+# else:
+#     print("Not a prime")
+
+
+# for i in range(1,100):
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         print(i)
+
+
+# num=5
+# net=2
+# count=0
+# while net<num:
+#     if num%net==0:
+#         count+=1
+#         break
+#     net+=1
+# if count<=0:
+#     print("Prime")
+# else:
+#     print("Not a prime")
+
+
+# num=10
+# count=0
+# for i in range(1,num+1):
+#     if num%i==0:
+#         count+=1
+# print(count)
+
+
+
+# for i in range(1,num+1):
+#     if num%i==0:
+#         print(i)
+        
+
+            
+        
+        
 
 
 
