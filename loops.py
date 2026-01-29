@@ -288,23 +288,37 @@
 
 
 
-for i in range(1,1000000):
-    temp=i
-    sum=0
-    while i>0:
-        rem=i%10
-        i//=10
-        net=1
-        for j in range(1,rem+1):
-            net*=j
-        sum+=net
-    if sum==temp:
-        print(temp)
+# for i in range(1,1000000):
+#     temp=i
+#     sum=0
+#     while i>0:
+#         rem=i%10
+#         i//=10
+#         net=1
+#         for j in range(1,rem+1):
+#             net*=j
+#         sum+=net
+#     if sum==temp:
+#         print(temp)
 
     
 
+#  Day 4 Phase 1--------------------------------------------------------------
 
+input=int(input("Enter Number:"))
+temp=input
+l=len(str(input))
+sum=0
+while input>0:
+    rem=input%10
 
+    sum+=rem**l
+
+    input//=10
+if sum==temp:
+    print("Armstrong number")
+else:
+    print("Not a armstrong number")
 
 
 
