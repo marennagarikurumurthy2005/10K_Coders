@@ -307,18 +307,46 @@
 
 input=int(input("Enter Number:"))
 temp=input
-l=len(str(input))
+net=temp
+l=0
+while net>0:
+    net//=10
+    l+=1
+
 sum=0
-while input>0:
-    rem=input%10
+# while input>0:
+#     rem=input%10
 
-    sum+=rem**l
+#     sum+=rem**l
 
-    input//=10
+#     input//=10
+# if sum==temp:
+#     print(f"{temp} is a Armstrong number")
+# else:
+#     print(f"{temp} is Not a armstrong number")
+
+# for i in range(l):
+#     get=input%10
+#     sum+=get**l
+#     input//=10
+
+# if sum==temp:
+#     print(f"{temp} is a Armstrong number")
+# else:
+#     print(f"{temp} is Not a armstrong number")
+
+
+
+for i in str(input):
+    sum+=int(i)**l
+
 if sum==temp:
-    print("Armstrong number")
+    print(f"{temp} is a Armstrong number")
 else:
-    print("Not a armstrong number")
+    print(f"{temp} is Not a armstrong number")
+    
+
+
 
 
 
