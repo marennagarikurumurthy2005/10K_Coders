@@ -305,15 +305,15 @@
 
 #  Day 4 Phase 1--------------------------------------------------------------
 
-input=int(input("Enter Number:"))
-temp=input
-net=temp
-l=0
-while net>0:
-    net//=10
-    l+=1
+# input=int(input("Enter Number:"))
+# temp=input
+# net=temp
+# l=0
+# while net>0:
+#     net//=10
+#     l+=1
 
-sum=0
+# sum=0
 # while input>0:
 #     rem=input%10
 
@@ -337,14 +337,64 @@ sum=0
 
 
 
-for i in str(input):
-    sum+=int(i)**l
+# for i in str(input):
+#     sum+=int(i)**l
 
-if sum==temp:
-    print(f"{temp} is a Armstrong number")
-else:
-    print(f"{temp} is Not a armstrong number")
-    
+# if sum==temp:
+#     print(f"{temp} is a Armstrong number")
+# else:
+#     print(f"{temp} is Not a armstrong number")
+
+
+
+#  DAY 4 phase 1----------------------------------------------
+
+# print(ord("a"))
+#  print the capital alphabets from A-Z
+# for i in range(26):
+#     print(chr(i+65))
+
+# for i in range(26):
+#     print(chr(i+97))
+
+
+# Count even digits in a number
+
+# num=152478
+# count=0
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     if rem%2==0:
+#         count+=1
+# print(count)
+
+
+# num=123579
+# count=0
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     if rem%2!=0:
+#         count+=1
+# print(count)
+
+
+num=156
+count=0
+while num>0:
+    rem=num%10
+    num//=10
+    if rem%5==0: # if rem==5:
+        count+=1
+print(count)
+
+
+
+
+
+
+
 
 
 
