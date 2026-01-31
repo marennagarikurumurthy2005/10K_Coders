@@ -34,8 +34,8 @@
 	},
 	"records": [
 		{
-			"x": -8565.127679830002,
-			"y": -3369.422289923638,
+			"x": -16771.79454994719,
+			"y": -3729.422289923638,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -166,6 +166,246 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -16929.46046781006,
+			"y": -2219.5677006077062,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:IkzrBXX3yBZVYJvudMYWB",
+			"type": "text",
+			"props": {
+				"color": "red",
+				"size": "m",
+				"w": 1275.5833740234375,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#count even digits in a number"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#initialize a number "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "num=153"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "initialize the count variable"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "count=0"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#as we dont know the number of iterations we use while loop "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "while num>0:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t#getting the reminder i.e the last digit of a number"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\trem=num%10"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t# after getting the reminder updating the number by removing the last digit for next iterations"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\tnum//=10 #using assignment operator type 2"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t# now we have the last digit so now check it that it is a even or not by using if condition"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\tif num%2==0:"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\t#increment the count value"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\t\tcount+=1"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#printing the final count value"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "print(count)"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b00mu34XV",
+			"typeName": "shape"
+		},
+		{
 			"x": 60.33854293823242,
 			"y": -5.8854187903581945,
 			"rotation": 0,
@@ -228,8 +468,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8624.237950551493,
-			"y": -3373.235852820191,
+			"x": -16830.90482066868,
+			"y": -3733.235852820191,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -259,8 +499,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8714.810092257087,
-			"y": -3412.324888875902,
+			"x": -16921.476962374272,
+			"y": -3772.324888875902,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -414,8 +654,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8838.750945312813,
-			"y": -3382.7697666079907,
+			"x": -17045.41781543,
+			"y": -3742.7697666079907,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -445,8 +685,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8526.038709238463,
-			"y": -3388.4901174992374,
+			"x": -16732.70557935565,
+			"y": -3748.4901174992374,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -476,8 +716,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8840.657733307507,
-			"y": -3389.443511496584,
+			"x": -17047.32460342469,
+			"y": -3749.443511496584,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -507,16 +747,16 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 18027.385686665817,
-			"y": 2330.731056410256,
-			"z": 0.4822581318673458,
+			"x": 19038.291058426974,
+			"y": 3806.0991051445053,
+			"z": 0.40814039272987457,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"x": -8779.640726962658,
-			"y": -3399.930806188896,
+			"x": -16986.307597079845,
+			"y": -3759.930806188896,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -639,8 +879,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8531.75896847987,
-			"y": -3357.028207236632,
+			"x": -16738.425838597053,
+			"y": -3717.028207236632,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -670,8 +910,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8794.894978548871,
-			"y": -3301.7315386901964,
+			"x": -17001.561848666057,
+			"y": -3661.7315386901964,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -701,8 +941,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8896.90779585129,
-			"y": -3383.7231606053374,
+			"x": -17103.574665968474,
+			"y": -3743.7231606053374,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -732,8 +972,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -9004.64095095212,
-			"y": -3422.8121966610483,
+			"x": -17211.307821069306,
+			"y": -3782.8121966610483,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -794,8 +1034,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8612.797222583333,
-			"y": -3373.235852820191,
+			"x": -8546.532320718645,
+			"y": -3084.0767085245443,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -825,8 +1065,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8759.619479204044,
-			"y": -3323.659522072168,
+			"x": -16966.286349321228,
+			"y": -3683.659522072168,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -887,8 +1127,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8440.233511333934,
-			"y": -3414.2316768705955,
+			"x": -16646.90038145112,
+			"y": -3774.2316768705955,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -982,9 +1222,7 @@
 		{
 			"editingShapeId": null,
 			"croppingShapeId": null,
-			"selectedShapeIds": [
-				"shape:BZ7hCFb32kcFOzZQr0--e"
-			],
+			"selectedShapeIds": [],
 			"hoveredShapeId": null,
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
@@ -1026,8 +1264,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -9164.069542768993,
-			"y": -3496.2338449269228,
+			"x": -17061.730050162092,
+			"y": -3291.41260054174,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1224,8 +1462,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8872.119656662946,
-			"y": -3447.6003489422255,
+			"x": -17078.78652678013,
+			"y": -3807.6003489422255,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1255,8 +1493,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8908.348471448115,
-			"y": -3392.3036803957903,
+			"x": -17115.0153415653,
+			"y": -3752.3036803957903,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1441,8 +1679,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8662.373605702693,
-			"y": -3342.727349647767,
+			"x": -16869.04047581988,
+			"y": -3702.727349647767,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1472,8 +1710,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8724.344032230554,
-			"y": -3337.0069987565203,
+			"x": -16931.01090234774,
+			"y": -3697.0069987565203,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1706,8 +1944,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8567.034520196034,
-			"y": -3377.04940262391,
+			"x": -16773.701390313217,
+			"y": -3737.04940262391,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1799,48 +2037,6 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -17889.23896751739,
-			"y": -3419.916501192659,
-			"rotation": 0,
-			"isLocked": false,
-			"opacity": 1,
-			"meta": {},
-			"id": "shape:efeFkBwBxwLWf-uCIV6I3",
-			"type": "text",
-			"props": {
-				"color": "black",
-				"size": "m",
-				"w": 43.21875,
-				"font": "draw",
-				"textAlign": "start",
-				"autoSize": true,
-				"scale": 1,
-				"richText": {
-					"type": "doc",
-					"attrs": {
-						"dir": "auto"
-					},
-					"content": [
-						{
-							"type": "paragraph",
-							"attrs": {
-								"dir": "auto"
-							},
-							"content": [
-								{
-									"type": "text",
-									"text": "eve"
-								}
-							]
-						}
-					]
-				}
-			},
-			"parentId": "page:page",
-			"index": "akmnIiqV",
-			"typeName": "shape"
-		},
-		{
 			"x": -17296.79490918822,
 			"y": -2295.134618281864,
 			"rotation": 0,
@@ -1872,8 +2068,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8930.276507201423,
-			"y": -3433.2994913533607,
+			"x": -17136.94337731861,
+			"y": -3793.2994913533607,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1903,8 +2099,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8472.648750129716,
-			"y": -3418.9986206716612,
+			"x": -16679.315620246904,
+			"y": -3778.9986206716612,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -1951,12 +2147,12 @@
 			"followingUserId": null,
 			"opacityForNextShape": 1,
 			"stylesForNextShape": {
-				"tldraw:color": "blue"
+				"tldraw:color": "red"
 			},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -1995,8 +2191,8 @@
 			"typeName": "instance"
 		},
 		{
-			"x": -8506.017461479849,
-			"y": -3389.443511496584,
+			"x": -16712.684331597033,
+			"y": -3749.443511496584,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,
@@ -2119,6 +2315,37 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -17128.14385256232,
+			"y": -2304.4657305452224,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:4qeRLO5JR7FXcgGrRgCJ8",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAAAAA/hTklSAAAAAAvTQAAhT1+TAAAAAAvTQAAAADWTAAAAAAvTQAAAAAvTQAAAADXTAAAAADgTQAAAACHTQAAAAAvTQAAiMW9UgAAAAB+TAAAAAB+TAAAhcE6SgAAAACISQAAAADpRgAAAACIRQAAAADpRgAAAAA4SgAAAACISQAAAADXSAAAhT2ISQAAAAA4SgAAAAAlSAAAAADXSAAAhT3pSgAAAACIRQAAjz3XSAAAAAAlSAAAhT0mSAAAAACIRQAAAAAkRAAAhT0mRAAAAACFPQAAAACFPQAAAACPPQAAAACFPQAAhT2FPQAAAACKQQAAAACFPQAAAACFPQAAAACFPQAAAACPPQAAAACFPQAAAACFPQAAAAAmRAAAjz2FPQAAAACKQQAAAAAkRAAAAACPPQAAAACFQQAAAACFQQAAhT2KQQAAAACFPQAAAACFPQAAAACPPQAAAAAkRAAAhT2KQQAAAACFQQAAhT3sRgAAAAAkRAAAikEmRAAAhT2IRQAAAACFQQAAhT0AAAAAAACKQQAAAACFPQAAAACFPQAA"
+					}
+				],
+				"color": "blue",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "azcw9N9V",
+			"typeName": "shape"
+		},
+		{
 			"x": -17647.92085671799,
 			"y": -2260.5749693063353,
 			"rotation": 0,
@@ -2150,8 +2377,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": -8517.458137076674,
-			"y": -3429.4859284568074,
+			"x": -16724.12500719386,
+			"y": -3789.4859284568074,
 			"rotation": 0,
 			"isLocked": false,
 			"opacity": 1,

@@ -43,3 +43,5 @@ SELECT * from marks;
 
 
 --  for normal from CREATE Table sports(sport_id INT,sport_name VARCHAR(30),fav_player varchar(30),specs VARCHAR(30),country VARCHAR(30));
+
+

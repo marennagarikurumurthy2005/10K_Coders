@@ -380,14 +380,95 @@
 # print(count)
 
 
-num=156
-count=0
-while num>0:
-    rem=num%10
-    num//=10
-    if rem%5==0: # if rem==5:
-        count+=1
-print(count)
+# num=156
+# count=0
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     if rem%5==0: # if rem==5:
+#         count+=1
+# print(count)
+
+
+# finding the second largest digit in a number
+# brute force
+# num=int(input("Enter Number:"))
+# largest=0
+# second_largest=0
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     if rem>largest:
+#         second_largest=largest
+#         largest=rem
+        
+#     if second_largest>largest and rem>second_largest:
+#         second_largest=rem
+        
+    
+# print(second_largest)
+    
+
+
+
+
+
+# method 1 using inbuilt functions
+# num=int(input("Enter Number:"))
+# list=[]
+# while num>0:
+#     rem=num%10
+#     num//=10
+#     list.append(rem)
+#     list.sort()
+# print(list[-2])
+
+# composite number
+# num=2
+# count=0
+# for i in range(2,num):
+#     if num%i==0:
+#         count+=1
+#         break
+# if count==1:
+#     print("Composite")
+# else:
+#     print("Not a composite")
+
+# composite numbers from 1 to 100
+# for i in range(1,100):
+#     count=0
+#     for j in range(2,i):
+#         if i%j==0:
+#             count+=1
+#             break
+#     if count==1:
+#         print(i)
+
+
+       
+#Day % phase 1=============================================================
+print(ord("a"))
+
+
+# for i in range(26):
+#     if (i+65)%2==0:
+#         print(chr(i+65))
+
+# print("ODD Alphabets")
+    
+# for j in range(26):
+#     if (j+65)%2!=0:
+#         print(chr(j+65))
+
+# for i in range(26):
+#     if (i+97)%2==0:
+#         print(chr(i+97))
+# for j in range(26):
+#     if (j+97)%2!=0:
+#         print(chr(j+97))
+
+
 
 
 

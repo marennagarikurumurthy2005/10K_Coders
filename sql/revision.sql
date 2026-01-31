@@ -196,6 +196,8 @@ ROLLBACK;
 -- triggers,
 -- procedures
 -- Views
+-- cte 
+-- window functions rank, dense_rank 
 
 -- Normalization
 
