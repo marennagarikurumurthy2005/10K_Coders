@@ -747,9 +747,9 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 19038.291058426974,
-			"y": 3806.0991051445053,
-			"z": 0.40814039272987457,
+			"x": 17208.114379315466,
+			"y": 1668.8596316082132,
+			"z": 0.6600480295772084,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
@@ -1220,10 +1220,12 @@
 			"typeName": "shape"
 		},
 		{
-			"editingShapeId": null,
+			"editingShapeId": "shape:78EFjPCJdzFdcZ_j38Y_x",
 			"croppingShapeId": null,
-			"selectedShapeIds": [],
-			"hoveredShapeId": null,
+			"selectedShapeIds": [
+				"shape:78EFjPCJdzFdcZ_j38Y_x"
+			],
+			"hoveredShapeId": "shape:78EFjPCJdzFdcZ_j38Y_x",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -1614,6 +1616,120 @@
 			},
 			"parentId": "page:page",
 			"index": "a12MNz6G",
+			"typeName": "shape"
+		},
+		{
+			"x": -16886.261410935494,
+			"y": -1494.9674122883011,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:78EFjPCJdzFdcZ_j38Y_x",
+			"type": "text",
+			"props": {
+				"color": "black",
+				"size": "m",
+				"w": 943.625,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#printing even and odd ascii values :"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#get numbers from 0 to 25 which form 26 count of numbers "
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#then add ascii numbers to every count for Capital +65 for small letters"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "#+97 and print every count chr through chr() function based on conditions"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "for i in range(26):"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "\tif"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "b01kzaLnl",
 			"typeName": "shape"
 		},
 		{
@@ -2146,9 +2262,7 @@
 		{
 			"followingUserId": null,
 			"opacityForNextShape": 1,
-			"stylesForNextShape": {
-				"tldraw:color": "red"
-			},
+			"stylesForNextShape": {},
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
@@ -2162,8 +2276,8 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 1042,
-				"h": 369.3333435058594
+				"w": 1062,
+				"h": 484.66668701171875
 			},
 			"insets": [
 				false,

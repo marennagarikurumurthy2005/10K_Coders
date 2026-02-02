@@ -448,7 +448,7 @@
 
        
 #Day % phase 1=============================================================
-print(ord("a"))
+# print(ord("a"))
 
 
 # for i in range(26):
@@ -467,6 +467,120 @@ print(ord("a"))
 # for j in range(26):
 #     if (j+97)%2!=0:
 #         print(chr(j+97))
+
+
+
+#  Root number ---------------------------------------------------------------
+
+# while num>9:
+#     sum=0
+#     while num>0:
+#         rem=num%10
+#         num//=10
+#         sum+=rem
+#     num=sum
+
+# print(num)
+
+# Magical number---------------------------------------------------------------
+
+# def net(data):
+#     if data==0:
+#         return data
+#     else:
+#         rem=data%10
+#         data//=10
+#         return rem+net(data)
+    
+
+# num=int(input("Enter a number:"))
+# while num>9:
+#     num=net(num)
+# print(num)
+
+# if num==1:
+#     print("magical number")
+# else:
+#     print("Not a magical number")
+
+# sum=0
+# for i in range(10):
+#     sum+=i
+# print(sum)
+
+
+#Day5 phase1=================================================
+#fib sequence below the num n
+
+# n=5
+# c=0
+# a,b=0,1
+# c=a+b
+# print(a,b)
+# while c<n:
+#     print(c)
+#     a=b
+#     b=c
+#     c=a+b
+
+
+# fib upto length n
+# n=15
+# a,b=0,1
+# for i in range(n):
+#     print(a)
+#     a,b=b,a+b
+
+
+# fib num less than n
+# n=15
+# a,b=0,1
+# for i in range(n):
+#     if b<n:
+#         print(a,end=" ")
+#         a,b=b,a+b
+#     else:
+#         break
+
+#fib upto len n
+
+# n=15
+# a,b=0,1
+# print(a)
+# print(b)
+# count=2
+
+# for i in range(2,n):
+#     c=a+b
+#     print(c)
+#     a=b
+#     b=c
+#     count+=1
+# print(c)
+
+# print(count)
+
+    
+n = int(input())
+temp = n
+sum = 0
+while n>0:
+    rem = n%10
+    n//=10
+    sum+=rem
+if temp%sum==0:
+    print("Harshad number")
+else:
+    print("not a harshad number")
+
+
+
+    
+    
+        
+        
+
+
 
 
 

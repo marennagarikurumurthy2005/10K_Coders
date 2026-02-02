@@ -190,15 +190,12 @@ ROLLBACK;
 -- join
 -- full 
 -- cross
-
-
-
+-- Nested queries
 -- triggers,
 -- procedures
 -- Views
 -- cte 
--- window functions rank, dense_rank 
-
+-- window functions rank, dense_rank row_number()
 -- Normalization
 
 
