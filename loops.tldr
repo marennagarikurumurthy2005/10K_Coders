@@ -158,6 +158,37 @@
 			"typeName": "shape"
 		},
 		{
+			"x": -16324.850645352904,
+			"y": 3140.182881883565,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:8e6S8tC_fDVIqpd8lzNTs",
+			"type": "draw",
+			"props": {
+				"segments": [
+					{
+						"type": "free",
+						"path": "AAAAAAAAAAAAAAA/"
+					}
+				],
+				"color": "black",
+				"fill": "none",
+				"dash": "draw",
+				"size": "m",
+				"isComplete": true,
+				"isClosed": false,
+				"isPen": false,
+				"scale": 1,
+				"scaleX": 1,
+				"scaleY": 1
+			},
+			"parentId": "page:page",
+			"index": "b25bthH8V",
+			"typeName": "shape"
+		},
+		{
 			"x": 0,
 			"y": 0,
 			"lastActivityTimestamp": 0,
@@ -1770,8 +1801,8 @@
 			"typeName": "shape"
 		},
 		{
-			"x": 17334.706361004155,
-			"y": -1777.3393364320718,
+			"x": 18077.61767301691,
+			"y": -2144.5977533875325,
 			"z": 0.39708642906615566,
 			"meta": {},
 			"id": "camera:page:page",
