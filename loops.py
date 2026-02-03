@@ -561,17 +561,86 @@
 # print(count)
 
     
-n = int(input())
-temp = n
-sum = 0
-while n>0:
-    rem = n%10
-    n//=10
-    sum+=rem
-if temp%sum==0:
-    print("Harshad number")
-else:
-    print("not a harshad number")
+# n = int(input())
+# temp = n
+# sum = 0
+# while n>0:
+#     rem = n%10
+#     n//=10
+#     sum+=rem
+# if temp%sum==0:
+#     print("Harshad number")
+# else:
+#     print("not a harshad number")
+
+
+
+
+# num1=10
+# num2=20
+# # divi=max(num1,num2)
+# sum=1
+
+# for i in range(2,max(num1,num2)):
+#     if num1%i==0 or num2%i==0:
+#         # print(i)
+#         # break
+#         sum*=i
+#         # divi=min(divi,i)
+
+# print(sum)       
+# # print(divi)
+
+
+#  Day 6 phase 1=========================================================================
+# for i in range(1,100):
+#     square=i**2
+#     sum=0
+#     while square>0:
+#         rem=square%10
+#         sum+=rem
+#         square//=10
+#     if i==sum:
+#         print(i)
+
+
+#  LCM of a number
+
+num1=2
+num2=3
+largest=max(num1,num2)
+pro=num1*num2
+while largest<=pro:
+    if largest%num1==0 and largest%num2==0:
+        print(largest)
+        break
+    largest+=1
+
+# way2
+
+largest=max(num1,num2)
+
+while True:
+    if largest%num1==0 and largest%num2==0:
+        print(largest)
+        break
+    largest+=1
+
+# way3 
+
+for i in range(max(num1,num2),pro+1):
+    if i%num1==0 and i%num2==0:
+        print(i)
+        break
+
+
+
+
+
+
+
+
+
 
 
 
