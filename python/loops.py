@@ -657,13 +657,13 @@
 
 #Octal number
 
-num=153
-occt=""
-while num>0:
-    rem=num%8
-    occt=str(rem)+occt
-    num//=8
-print(occt)
+# num=153
+# occt=""
+# while num>0:
+#     rem=num%8
+#     occt=str(rem)+occt
+#     num//=8
+# print(occt)
 
 
 
