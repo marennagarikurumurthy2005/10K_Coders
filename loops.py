@@ -606,32 +606,65 @@
 
 #  LCM of a number
 
-num1=2
-num2=3
-largest=max(num1,num2)
-pro=num1*num2
-while largest<=pro:
-    if largest%num1==0 and largest%num2==0:
-        print(largest)
-        break
-    largest+=1
+# num1=2
+# num2=3
+# largest=max(num1,num2)
+# pro=num1*num2
+# while largest<=pro:
+#     if largest%num1==0 and largest%num2==0:
+#         print(largest)
+#         break
+#     largest+=1
 
 # way2
 
-largest=max(num1,num2)
+# largest=max(num1,num2)
 
-while True:
-    if largest%num1==0 and largest%num2==0:
-        print(largest)
-        break
-    largest+=1
+# while True:
+#     if largest%num1==0 and largest%num2==0:
+#         print(largest)
+#         break
+#     largest+=1
 
-# way3 
+# # way3 
 
-for i in range(max(num1,num2),pro+1):
-    if i%num1==0 and i%num2==0:
-        print(i)
-        break
+# for i in range(max(num1,num2),pro+1):
+#     if i%num1==0 and i%num2==0:
+#         print(i)
+#         break
+
+
+# HCF
+# num1=18
+# num2=27
+# hcf=0
+# num3=min(num2,num1)
+# for i in range(num3,0,-1):
+#     if num1%i==0 and num2%i==0:
+#         print(i)
+#         break
+
+
+# num=15
+# dub=0
+# while num>0:
+#     rem=num%10
+#     dub=dub+rem
+#     num//=10
+# print(dub)
+# print(oct(num))
+
+
+#Octal number
+
+num=153
+occt=""
+while num>0:
+    rem=num%8
+    occt=str(rem)+occt
+    num//=8
+print(occt)
+
 
 
 
