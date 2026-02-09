@@ -1,0 +1,27 @@
+
+
+
+
+Self Introduction -- It gives the basic information abount US
+
+Structure of Self Intro--
+1 Greetings
+2 Name 
+3 Place
+4 Education
+5 Experience (if applicable)
+6 Tech Skills
+8 Strenghts
+9 Hobbies
+10 short term and long term goals
+11 Certifications and acheivements
+12 Thank you
+
+HI good afternoon to all i'm kurumurthy , i come from maisammaguda , kompally .
+i'm currently pursuing my engineering 4th year in MRITS,maisammaguda in CSE stream
+comming to my tech skills i have decent skills in frontend technologies like html,css,js,react,tailwind and in backend python,and its frame work django, and  SQL
+i have worked on projects like streamchat (description), rai-construction(free lancing site ) and currently working on go rides
+comming to my strenghts team colaboration, works under pressure
+hobbies are playing cricket and reading tech docs
+short teram goal is to build networking and long term goal to make go rides as a unicorn
+Thank you
