@@ -94,15 +94,101 @@
 
 # evensum(100)
 
-def table(num):
-    for i in range(1,num+1):
-        print(f"{i} Multiplication Table-------------------")
-        print("")
-        for j in range(1,11):
-            print(f"{i} X {j} = {i*j}")
+# def table(num):
+#     for i in range(1,num+1):
+#         print(f"{i} Multiplication Table-------------------")
+#         print("")
+#         for j in range(1,11):
+#             print(f"{i} X {j} = {i*j}")
         
 
 
-table(10)
+# table(10)
 
 
+# def countNum(n):
+#     count=0
+#     for i in range(n):
+#         count+=1
+#     print(count)
+# countNum(100)
+
+
+# factorial of a number
+
+# def fact(num):
+#     if num==1:
+#         return num
+#     else:
+#         return num*fact(num-1)
+# res=fact(5)
+# print(res)
+
+
+# def countDig(num):
+#     count=0
+#     while num>0:
+#         count+=1
+#         num//=10
+#     return count
+# res=countDig(156)
+# print(res)
+
+
+# def countDig(num):
+#     sum=0
+#     while num>0:
+#         rem=num%10
+        
+#         sum+=rem
+#         num//=10
+#     return sum
+# res=countDig(156)
+# print(res)
+
+
+# check prime number
+
+# def checkPrime(num):
+#     flag=0
+#     for i in range(2,num):
+#         if num%i==0:
+#             flag=1
+#             break
+#     if flag==0:
+#         print("prime")
+#     else:
+#         print("Not a prime")
+
+
+# checkPrime(int(input("Enter number to check:")))
+
+# find the the number is a armstrong number or not 
+
+# def checkArms(num):
+#     l=len(str(num))
+#     temp=num
+#     sum=0
+#     while num>0:
+#         rem=num%10
+#         sum+=rem**l
+#         num//=10
+#     if sum==temp:
+#         print("ARMS")
+#     else:
+#         print("NOT ARMS")
+
+# checkArms(int(input("ENTER NUMBER :")))
+
+
+# check the number forms palindrome or not 
+def checkPalin(num):
+    sum=0
+    temp=num
+    while num>0:
+        rem=num%10
+        sum=sum*10+rem
+        num//=10
+    print(sum)
+
+checkPalin(156)
