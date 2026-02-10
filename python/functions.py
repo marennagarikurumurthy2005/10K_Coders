@@ -182,13 +182,141 @@
 
 
 # check the number forms palindrome or not 
-def checkPalin(num):
-    sum=0
-    temp=num
-    while num>0:
-        rem=num%10
-        sum=sum*10+rem
-        num//=10
-    print(sum)
+# def checkPalin(num):
+#     sum=0
+#     temp=num
+#     while num>0:
+#         rem=num%10
+#         sum=sum*10+rem
+#         num//=10
+#     return sum
+# num=int(input("Enter number:"))
+# res=checkPalin(num)
+# print(True if res==num else False)
 
-checkPalin(156)
+# def fact_Count(num):
+#     count=1
+#     for i in range(2,num+1):
+#         if num%i==0:
+#             count+=1
+#     return count
+
+# res=fact_Count(10)
+# print(res)
+
+# perfect number 
+
+# def perfect(num):
+#     sum=0
+#     for i in range(1,num):
+#         if num%i==0:
+#             sum+=i
+#     return sum
+# num=6
+# res=perfect(num)
+# if num==res:
+#     print("perfect")
+
+
+
+# def fact(net):
+#     if net==1:
+#         return net
+#     else:
+#         return net*fact(net-1)
+
+# def strong(num):
+#     temp=num
+#     sum=0
+#     while temp>0:
+#         rem=temp%10
+#         fa=fact(rem)
+#         sum+=fa
+#         temp//=10
+#     return sum
+
+
+# num=145
+# res=strong(num)
+# if num==res:
+#     print("strong")
+
+#  LCM of 2 numbers
+
+# def lcm(num1,num2):
+#     pro=num1*num2
+#     lcm=max(num1,num2)
+#     for i in range(lcm,pro+1):
+#         if i%num1==0 and i%num2==0:
+#             lcm=i
+#             break
+#     return lcm
+# res=lcm(21,24)
+# print(res)
+
+
+#  printing all fib numbers upto n
+
+# def fib(num):
+#     a,b=0,1
+#     c=a+b
+#     print(a,b , end=" ")
+#     while c<=num:
+#         print(c , end=" ")
+#         a=b
+#         b=c
+#         c=a+b
+# num=10
+# res=fib(num)
+
+# def fibChe(num):
+#     a,b,c=0,1,1
+#     while c<num:
+#         a=b
+#         b=c
+#         c=a+b
+#     return c
+# num=int(input("Enter a number"))
+# print(True if num==fibChe(num) else False)
+
+
+
+#  find the 15th tems in the sequence 
+# 3,8,13 formula a+(n-1)*d
+#  here a=initail number , d=difference 
+
+count=1
+net=7
+while count<25:
+    net+=5
+    # sum=net+5
+    # net=sum
+    count+=1
+print(net)
+ 
+
+
+a=7
+d=5
+n=25
+sum=a
+for i in range(1,n):
+    sum+=d
+print(sum)
+
+
+    
+
+    
+
+
+
+
+        
+
+
+
+
+
+
+
