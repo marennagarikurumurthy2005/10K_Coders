@@ -285,27 +285,49 @@
 # 3,8,13 formula a+(n-1)*d
 #  here a=initail number , d=difference 
 
-count=1
-net=7
-while count<25:
-    net+=5
-    # sum=net+5
-    # net=sum
-    count+=1
-print(net)
+# count=1
+# net=7
+# while count<25:
+#     net+=5
+#     # sum=net+5
+#     # net=sum
+#     count+=1
+# print(net)
  
 
 
-a=7
-d=5
-n=25
-sum=a
-for i in range(1,n):
-    sum+=d
-print(sum)
+# a=7
+# d=5
+# n=25
+# sum=a
+# for i in range(1,n):
+#     sum+=d
+# print(sum)
 
 
-    
+
+# def numcheck(num):
+#     if num>0:
+#         sum=num+5
+#         return sum
+
+# num_list=[1,-10,8,-6,44,-7]
+# res=list(filter(numcheck,num_list))
+
+# print(res)
+
+
+l1=["Mk","vk","rk"]
+res=list(map(lambda a: a.upper(),l1))
+print(res)
+
+res=list(map(lambda a: len(a),l1))
+print(res)
+
+num_list=[1,-10,8,-6,44,-7]
+res=list(map(lambda x: x+5 if x>0 else x,num_list))
+print(res)
+
 
     
 
