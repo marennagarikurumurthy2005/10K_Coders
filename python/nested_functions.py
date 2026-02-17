@@ -42,24 +42,46 @@
 
 #  to update the value we use the nonlocal keyword
 
+# def parent():
+#     a=40
+#     def child():
+#         nonlocal a
+#         a+=1
+#         print(a)
+#     child()
+# parent()
+
+
+# a=40
+# def parent():
+#     global a
+#     a+=1
+#     print(a)
+#     def child():
+#         print("yes")
+#     child()
+# parent()
+
+
+
+# global is used to access and modify only which are in the global scope 
+#  the nonlocal is used to access and modify the local scope variables
+
+# for example
+
+# global
+x=10
 def parent():
-    a=40
     def child():
-        nonlocal a
-        a+=1
-        print(a)
-    child()
-parent()
+        global x
+        x+=1
+        print(x)
+    def child2():
+        global x
+        x-=1
+        print(x)
+    return child,child2
+parent()[0]()
+parent()[1]()
 
-
-a=40
-def parent():
-    def child():
-        global a
-        a+=1
-        print(a)
-    child()
-parent()
-
-
-
+#  nonlocal
