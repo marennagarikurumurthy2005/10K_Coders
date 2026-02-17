@@ -85,3 +85,17 @@ parent()[0]()
 parent()[1]()
 
 #  nonlocal
+
+def parent():
+    x=10
+    def child1():
+        nonlocal x
+        x+=1
+        print(x)
+    def child2():
+        nonlocal x
+        x-=1
+        print(x)
+    return child1,child2
+parent()[0]()
+parent()[1]()
