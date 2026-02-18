@@ -70,32 +70,42 @@
 # for example
 
 # global
-x=10
+# x=10
+# def parent():
+#     def child():
+#         global x
+#         x+=1
+#         print(x)
+#     def child2():
+#         global x
+#         x-=1
+#         print(x)
+#     return child,child2
+# parent()[0]()
+# parent()[1]()
+
+# #  nonlocal
+
+# def parent():
+#     x=10
+#     def child1():
+#         nonlocal x
+#         x+=1
+#         print(x)
+#     def child2():
+#         nonlocal x
+#         x-=1
+#         print(x)
+#     return child1,child2
+# parent()[0]()
+# parent()[1]()
+
+x=0
 def parent():
     def child():
-        global x
-        x+=1
+        x=10
         print(x)
-    def child2():
-        global x
-        x-=1
-        print(x)
-    return child,child2
-parent()[0]()
-parent()[1]()
+    return child()
+parent()
+    
 
-#  nonlocal
-
-def parent():
-    x=10
-    def child1():
-        nonlocal x
-        x+=1
-        print(x)
-    def child2():
-        nonlocal x
-        x-=1
-        print(x)
-    return child1,child2
-parent()[0]()
-parent()[1]()

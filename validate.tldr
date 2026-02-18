@@ -42,20 +42,20 @@
 			"typeName": "pointer"
 		},
 		{
-			"x": -441.0428254043772,
-			"y": -290.04518384424057,
-			"z": 3.882628496152528,
+			"x": -322.5844721521792,
+			"y": -615.8763470830581,
+			"z": 4.611802408770578,
 			"meta": {},
 			"id": "camera:page:page",
 			"typeName": "camera"
 		},
 		{
-			"editingShapeId": null,
+			"editingShapeId": "shape:G4S-Q69635nXkYbTw9DO2",
 			"croppingShapeId": null,
 			"selectedShapeIds": [
-				"shape:b2yT2s9FNrK52N0B92KJ4"
+				"shape:G4S-Q69635nXkYbTw9DO2"
 			],
-			"hoveredShapeId": null,
+			"hoveredShapeId": "shape:G4S-Q69635nXkYbTw9DO2",
 			"erasingShapeIds": [],
 			"hintingShapeIds": [],
 			"focusedGroupId": null,
@@ -180,6 +180,78 @@
 			"typeName": "shape"
 		},
 		{
+			"x": 354.72429405800096,
+			"y": 660.7817210881011,
+			"rotation": 0,
+			"isLocked": false,
+			"opacity": 1,
+			"meta": {},
+			"id": "shape:G4S-Q69635nXkYbTw9DO2",
+			"type": "text",
+			"props": {
+				"color": "red",
+				"size": "m",
+				"w": 135.64584350585938,
+				"font": "draw",
+				"textAlign": "start",
+				"autoSize": true,
+				"scale": 1,
+				"richText": {
+					"type": "doc",
+					"attrs": {
+						"dir": "auto"
+					},
+					"content": [
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							},
+							"content": [
+								{
+									"type": "text",
+									"text": "DO FOLLOW"
+								}
+							]
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						},
+						{
+							"type": "paragraph",
+							"attrs": {
+								"dir": "auto"
+							}
+						}
+					]
+				}
+			},
+			"parentId": "page:page",
+			"index": "a6CFSbVV",
+			"typeName": "shape"
+		},
+		{
 			"meta": {},
 			"id": "page:page",
 			"name": "Page 1",
@@ -202,7 +274,7 @@
 			"brush": null,
 			"scribbles": [],
 			"cursor": {
-				"type": "cross",
+				"type": "default",
 				"rotation": 0
 			},
 			"isFocusMode": false,
@@ -212,7 +284,7 @@
 			"screenBounds": {
 				"x": 0,
 				"y": 0,
-				"w": 722,
+				"w": 1062,
 				"h": 646
 			},
 			"insets": [
