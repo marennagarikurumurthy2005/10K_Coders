@@ -107,5 +107,12 @@ def parent():
         print(x)
     return child()
 parent()
-    
+
+
+
+# funtion method miss
+def add():
+    return 25+5
+res=add()
+print(res)
 
