@@ -1,46 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>google.com</title>
 
     <style>
-        .main-wrapper{
-            display: flex;
-            flex-direction: column;
-        }
+      .main-wrapper {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+      }
 
-        .google-png{
+      a {
+        padding: 10px;
+        margin-left: 35px;
+        text-decoration: none;
+      }
+      a:hover {
+        color: rgb(95, 3, 3);
+        font-weight: bolder;
+      }
 
-            height: 50px;
-            width: 50px;
+      .google-png {
+        height: 50px;
+        width: 50px;
+      }
 
-        }
+      .search-png {
+        width: 10px;
+        height: 10px;
+      }
+      .level1 {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        margin-top: 50px;
+      }
 
-        .search-png{
-            width: 10px;
-            height: 10px;
-        }
+      .searchbar {
+        height: 40px;
+      }
 
+      .input-bar {
+        width: 300px;
+        height: 30px;
+        border-radius: 10px;
+      }
+
+      .searchbutton {
+        height: 35px;
+        width: 30px;
+        padding: 0;
+        margin-left: -20px;
+        border-left: none;
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div class="main-wrapper">
-    <div class="level1">
-        <div class="google-png-div"><img class="google-png" src="../images/image.png" alt="google png"></div>
-        <div class="searchbar"><input type="text" name="" placeholder="Search">
-        <button class="searchbutton"><img class="search-png" src="../images/image copy.png" alt=""></button></div>
-    </div>
+      <div class="level1">
+        <div class="google-png-div">
+          <img class="google-png" src="../images/image.png" alt="google png" />
+        </div>
+        <div class="searchbar">
+          <input class="input-bar" type="text" name="" placeholder="Search" />
+          <button class="searchbutton">
+            <img class="search-png" src="../images/image copy.png" alt="" />
+          </button>
+        </div>
+      </div>
+      <hr />
 
-    <div class="level2">
-        <ul>
-            <li><a href="">ALL</a></li>
-            <li><a href="">Images</a></li>
-            <li><a href="">videos</a></li>
-        </ul>
+      <div class="level2">
+        <a href="index.html">HOME</a>
+        <a target="googleframe" href="./all.html">ALL</a>
+        <a target="googleframe" href="./images.html">Images</a>
+        <a target="googleframe" href="./videos.html">Videos</a>
+      </div>
+      <iframe
+        name="googleframe"
+        width="700"
+        height="700"
+        frameborder="0"
+        style="margin-left: 400px"
+      ></iframe>
     </div>
-    </div>
-    
-</body>
+  </body>
 </html>
