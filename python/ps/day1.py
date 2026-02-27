@@ -22,7 +22,7 @@
 #         new_name=new_name+i
 # print(new_name)
 
-string="Kurumurthy0"
+string="1234"
 print(ord("A"))
 print(ord("Z"))
 print(ord("a"))
@@ -31,11 +31,11 @@ print(ord("0"))
 print(ord("9")) 
 
 
-digits=False
+digits=True
 for i in string:
     a=ord(i)
-    if a<=48 and a>=57:
-        digits=True
+    if a<48 or a>57:
+        digits=False
         break
 if digits:
     print("True")
@@ -47,13 +47,17 @@ else:
 st=True
 for i in string:
     a=ord(i)
-    if a<=65 and a>=122:
+    if a<65 or a>122:
        st=False
        break
 if st:
     print("True")
 else:
     print("False")
+
+
+string="MK"
+
 
 
 
