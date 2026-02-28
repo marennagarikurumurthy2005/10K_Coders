@@ -126,21 +126,21 @@
 
 
 
-class father:
-    def __init__(self,fname):
-        self.fname=fname
-    def f_details(self):
-        print(self.fname)
-class mother:
-    def __init__(self,mname):
-        self.mname=mname
-    def m_details(self):
-        print(self.mname)
-class child(father,mother):
-    def get_details(self,cname):
-        print(cname)
-        self.f_details()
-        self.m_details()
+# class father:
+#     def __init__(self,fname):
+#         self.fname=fname
+#     def f_details(self):
+#         print(self.fname)
+# class mother:
+#     def __init__(self,mname):
+#         self.mname=mname
+#     def m_details(self):
+#         print(self.mname)
+# class child(father,mother):
+#     def get_details(self,cname):
+#         print(cname)
+#         self.f_details()
+#         self.m_details()
         
     
 
@@ -222,3 +222,75 @@ class child(father,mother):
 # obj3.mech_details()
 
         
+
+
+# class A():
+#     def a_details(self):
+#         print("Class A")
+# class B():
+#     def b_details(self):
+#         print("Class B")
+# class C(A,B):
+#     def c_details(self):
+#         print("Class C")
+# class D(C):
+#     def d_details(self):
+#         print("Class D")
+# d1=D()
+# d1.a_details()
+# d1.b_details()
+# d1.c_details()
+# d1.d_details()
+
+
+class A:
+    def a_details(self):
+        print("Class A")
+class B(A):
+    def b_details(self):
+        print("Class B")
+class C(B):
+    def c_details(self):
+        print("Class C")
+class D(B):
+    def d_details(self):
+        print("Class D")
+
+class E(B):
+    def e_details(self):
+        print("E Class")
+class F(D,C,E):
+    def f_details(self):
+        print("F class")
+
+# class G(D):
+#     def g_details(self):
+#         print("G class")
+# class H(D,C,E):
+#     def g_details(self):
+#         print("H class")
+c1=C()
+c1.b_details()
+c1.a_details()
+c1.c_details()
+
+b1=B()
+b1.a_details()
+b1.b_details()
+
+d1=D()
+d1.b_details()
+d1.a_details()
+d1.d_details()
+
+e1=E()
+e1.b_details()
+e1.a_details()
+e1.e_details()
+
+f1=F()
+f1.a_details()
+f1.b_details()
+f1.f_details()
+f1.e_details()
+f1.c_details()
