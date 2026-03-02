@@ -243,54 +243,74 @@
 # d1.d_details()
 
 
-class A:
-    def a_details(self):
-        print("Class A")
-class B(A):
-    def b_details(self):
-        print("Class B")
-class C(B):
-    def c_details(self):
-        print("Class C")
-class D(B):
-    def d_details(self):
-        print("Class D")
+# class A:
+#     def a_details(self):
+#         print("Class A")
+# class B(A):
+#     def b_details(self):
+#         print("Class B")
+# class C(B):
+#     def c_details(self):
+#         print("Class C")
+# class D(B):
+#     def d_details(self):
+#         print("Class D")
 
-class E(B):
-    def e_details(self):
-        print("E Class")
-class F(D,C,E):
-    def f_details(self):
-        print("F class")
+# class E(B):
+#     def e_details(self):
+#         print("E Class")
+# class F(D,C,E):
+#     def f_details(self):
+#         print("F class")
 
-# class G(D):
-#     def g_details(self):
-#         print("G class")
-# class H(D,C,E):
-#     def g_details(self):
-#         print("H class")
-c1=C()
-c1.b_details()
-c1.a_details()
-c1.c_details()
+# # class G(D):
+# #     def g_details(self):
+# #         print("G class")
+# # class H(D,C,E):
+# #     def g_details(self):
+# #         print("H class")
 
-b1=B()
-b1.a_details()
-b1.b_details()
+# c1=C()
+# c1.b_details()
+# c1.a_details()
+# c1.c_details()
 
-d1=D()
-d1.b_details()
-d1.a_details()
-d1.d_details()
+# b1=B()
+# b1.a_details()
+# b1.b_details()
 
-e1=E()
-e1.b_details()
-e1.a_details()
-e1.e_details()
+# d1=D()
+# d1.b_details()
+# d1.a_details()
+# d1.d_details()
 
-f1=F()
-f1.a_details()
-f1.b_details()
-f1.f_details()
-f1.e_details()
-f1.c_details()
+# e1=E()
+# e1.b_details()
+# e1.a_details()
+# e1.e_details()
+
+# f1=F()
+# f1.a_details()
+# f1.b_details()
+# f1.f_details()
+# f1.e_details()
+# f1.c_details()
+
+
+# class A:
+#     def a_details(self):
+#         print("Class A")
+# class B(A):
+#     def b_details(self):
+#         print("Class B")
+# class C(A):
+#     def c_details(self):
+#         print("Class C")
+# class D(B,C):
+#     def d_details(self):
+#         print("Class D")
+# d=D()
+# d.a_details()
+# d.b_details()
+# d.c_details()
+# d.d_details()
