@@ -1,0 +1,136 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.mainwrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.whatsapp-head{
+    color: green;
+    margin-top: -5px;
+    border-bottom: 1px solid;
+    text-shadow: 1px 10px 50px rgb(15, 146, 104);
+    margin-bottom: 15px;
+    background-color: rgb(207, 240, 229);
+    
+}
+
+.nav-section{
+    display: flex;
+    margin-top: 1px;
+
+background-color: rgb(207, 240, 229);
+border-bottom: 1px solid;
+position: sticky;
+    top: 0;
+    
+
+
+    
+}
+.profile-icon-holder{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgb(18, 173, 44);
+    border-radius: 50%;
+    background-image: url("../whatsapp/images/revathi.jpg");
+    background-size: cover;
+    margin-left: 25px;
+
+    
+}
+
+.name-bio{
+    padding-left: 30px;
+
+}
+
+.name{
+
+    letter-spacing: 1px;
+}
+
+.name::after{
+    content: "✨";
+}
+
+.bio{
+    margin-top: -20px;
+    margin-left: 20px;
+    font-weight: 100;
+    color: grey;
+}
+
+.bio::before{
+    content: "🟢";
+}
+
+.chatsection{
+    background-image: url("images/image.png");
+    background-size: cover;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    
+
+}
+
+.u{
+    width: fit-content;
+    border: 1px solid white;
+    align-self: flex-start;
+    margin-top: 8px;
+    margin-bottom:8px;
+    margin-left: 10px;
+    border-radius: 0px 25px 25px 25px;
+    padding: 10px;
+    background-color: white;
+    color: black;
+
+
+}
+.me{
+    width: fit-content;
+    border: 1px solid white;
+    align-self: flex-end;
+    background-color: rgb(77, 218, 143);
+    margin-top: 8px;
+    margin-bottom:8px;
+    padding: 10px;
+    border-radius: 25px 0px 25px 25px;
+}
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    background-color: rgb(207, 240, 229);
+
+}
+
+.type-box{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 30px;
+    width: 75%;
+    height: 30px;
+    color: black;
+    border: 1 px solid grey;
+
+}
+
+
+.send-button{
+    padding: 10px;
+    margin-left: 20px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-image: url("./images/send.png");
+    background-size: cover;
+    
+}
