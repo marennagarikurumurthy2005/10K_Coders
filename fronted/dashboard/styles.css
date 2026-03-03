@@ -1,0 +1,118 @@
+body{
+    margin: 0px;
+    padding: 0px;
+}
+
+.main-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+
+.head-section{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.eternal-head{
+    color: black;
+    font-size: 90px;
+    font-weight: bold;
+    text-shadow: 0px 0px 5px grey;
+
+}
+
+.sub-head{
+    background-image: linear-gradient(to right,rgb(244, 246, 252) ,rgb(255, 255, 255),rgb(244, 246, 252));
+    width: fit-content;
+    align-self: center;
+    margin-top: -40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 0px 0px 5px rgb(185, 199, 244);
+    font-size: x-large;
+    font-weight: 100;
+    padding: 30px 70px ;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px grey;
+    text-transform: uppercase;
+
+
+}
+
+img{
+    height: 70px;
+    width: 70px;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.card-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 50px;
+    height: 450px;
+}
+
+.cards{
+    border:  1px solid rgb(222, 222, 222);
+    margin: 10px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+    
+}
+#card1:hover{
+    box-shadow: 0px 0px 20px grey;
+}
+#card2:hover{
+    box-shadow: 0px 0px 20px grey;
+}
+#card3:hover{
+    box-shadow: 0px 0px 20px grey;
+}
+#card4:hover{
+    box-shadow: 0px 0px 20px grey;
+}
+
+#card1{
+    background: linear-gradient(45deg, white,rgb(252, 165, 165),white);
+    
+}
+#card2{
+    background: linear-gradient(45deg, white,rgb(255, 252, 168),white);
+    
+}
+#card3{
+    background: linear-gradient(45deg, white,rgb(214, 167, 255),white);
+    
+}
+#card4{
+    background: linear-gradient(45deg, white,rgb(255, 170, 170),white);
+    
+}
+
+.des{
+    font-family: sans-serif;
+    text-align: center;
+    font-weight: 100;
+    color: rgb(78, 77, 77);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ckeck{
+    
+    margin-top: auto;
+    font-weight: bold;
+
+}
+
+.ckeck::after{
+    content: "🔺";
+}
