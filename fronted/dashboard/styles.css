@@ -126,7 +126,6 @@ img{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     display: flex;
     flex-direction: row;
-    padding-top: 5px;
     border: 1px solid rgb(218, 218, 218);
      background-image: linear-gradient(to right,rgb(244, 246, 252) ,rgb(255, 255, 255),rgb(244, 246, 252));
      box-shadow: 0px 0px 5px grey;
@@ -138,7 +137,6 @@ img{
 
 .navname{
     color: red;
-    padding: 5px;
     font-size:50px;
     margin-left: 25px;
 }
@@ -153,12 +151,11 @@ img{
 
 .signup{
     text-decoration: none;
-    padding: 20px;
 
 }
 
 a{
-    margin: 15px;
+    margin: 5px;
     margin-top: 15px;
     text-decoration: none;
     font-size: large;
