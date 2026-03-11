@@ -51,6 +51,7 @@ img{
     justify-content: center;
     margin-top: 50px;
     height: 450px;
+    flex-wrap: wrap;
 }
 
 .cards{
