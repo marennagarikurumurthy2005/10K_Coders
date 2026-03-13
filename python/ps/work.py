@@ -27,12 +27,30 @@
 #     print("Not Strong")
 
 
-string="aaabbbbcccc"
-new_string=""
-for i in string:
-    if i not in new_string:
-        new_string=new_string+i
+# string="aaabbbbcccc"
+# new_string=""
+# for i in string:
+#     if i not in new_string:
+#         new_string=new_string+i
 
-print(new_string)
+# print(new_string)
 
+# string="aaabbbbcccc"
+# new_string=""
+# dub=""
+# for i in string:
+#     if i in new_string:
+#         dub=dub+i
+#     else:
+#         new_string=new_string+i
+
+# print(dub)
+
+# string="aaabbbbcccc"
+# res=""
+
+# for i in string:
+#     if i not in res:
+#         res=res+i
+# print(res)
     
