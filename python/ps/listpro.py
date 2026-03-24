@@ -49,26 +49,29 @@
 
 # remove duplicates
 list=[1,2,4,5,2,6,1,7,5]
-print(set(list))
+# print(set(list))
 
-new_list=[]
-match=list[0]
-for i in list:
-    if i not in new_list:
-        new_list.append(i)
-print(new_list)
+# new_list=[]
+# match=list[0]
+# for i in list:
+#     if i not in new_list:
+#         new_list.append(i)
+# print(new_list)
+
+        
+          
 
 
 # merging 2 lists
-l1=[1,2]
-l2=[3,4,2]
-l3=l1+l2 
-print(l3)
+# l1=[1,2]
+# l2=[3,4,2]
+# l3=l1+l2 
+# print(l3)
 
-# common elements in 2 list:
-for i in l1:
-    if i in l2:
-        print(i)
+# # common elements in 2 list:
+# for i in l1:
+#     if i in l2:
+#         print(i)
 
 
 
