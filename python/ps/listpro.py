@@ -48,7 +48,7 @@
 # print(list)
 
 # remove duplicates
-list=[1,2,4,5,2,6,1,7,5]
+# list=[1,2,4,5,2,6,1,7,5]
 # print(set(list))
 
 # new_list=[]
@@ -76,6 +76,74 @@ list=[1,2,4,5,2,6,1,7,5]
 
 
 
+# find second largest element in a list 
+# finding second smallest number in list
+# copy list to another list
+# printing prime numbers in a list 
+# replace all zeros with given number in a list
+# check all numbers are same or not in a list 
 
+
+
+# list=[10,5,8,60]
+# largaest=list[0]
+# second_largest=list[0]
+# for i in list:
+#     if i>largaest:
+#         second_largest=largaest
+#         largaest=i
+#     elif second_largest<i and i!=largaest:
+#         second_largest=i
+# print(second_largest)
+
+# finding second smallest number 
+# list=[10,5,8,60]
+# smallest=list[0]
+# second_smallest=list[0]
+# for i in list:
+#     if i<smallest:
+#         second_smallest=smallest
+#         smallest=i
+#     elif second_smallest>i and i!=smallest:
+#         second_smallest=i
+# print(second_smallest)
+
+
+# copy list to another list
+
+# l1=[1,3,5,7]
+# # l2=l1.copy()
+# l2=l1[::]
+# print(l2)
+
+# printing prime numbers in a list 
+# list=[1,2,3,4,5,8,10,11,12,13,14,17]
+# for i in list:
+#     for j in range(2,i):
+#         if i%j==0:
+#             break
+#     else:
+#         print(i)
+
+# replace all zeros with given number
+# list=[0,2,5,7,6,3,0]
+# given_num=-1
+# for i in range(len(list)):
+#     if list[i]==0:
+#         list[i]=given_num
+# print(list)
+
+# check all numbers are same or not 
+
+# same=True
+# list=[5,5,5,5]
+# for i in list:
+#     if i!=list[0]:
+#         same=False
+#         break
+# if same:
+#     print("Same elements in list")
+# else:
+#     print("non same elements")
 
 
