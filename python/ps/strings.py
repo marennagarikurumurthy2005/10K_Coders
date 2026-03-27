@@ -131,16 +131,16 @@
 # else:
 #     print("not a anagram")
 
-string="krumrthy"
-flag=0
-for i in range(len(string)):
-    for j in range(i+1,len(string)):
-        if string[i]==string[j]:
-            print(string[i])
-            flag=1
-            break
-    if flag:
-        break
+# string="krumrthy"
+# flag=0
+# for i in range(len(string)):
+#     for j in range(i+1,len(string)):
+#         if string[i]==string[j]:
+#             print(string[i])
+#             flag=1
+#             break
+#     if flag:
+#         break
 
 # res=""
 # flag=0
@@ -153,14 +153,14 @@ for i in range(len(string)):
 #         break
 
 
-string="kurumrkthy"
-freq={}
-for i in string:
-    if i in freq:
-        freq[i]+=1
-    else:
-        freq[i]=1
-for i in freq:
-    if freq[i]==1:
-        print(i)
-        break     
+# string="kurumrkthy"
+# freq={}
+# for i in string:
+#     if i in freq:
+#         freq[i]+=1
+#     else:
+#         freq[i]=1
+# for i in freq:
+#     if freq[i]==1:
+#         print(i)
+#         break     

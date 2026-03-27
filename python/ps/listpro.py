@@ -147,3 +147,45 @@
 #     print("non same elements")
 
 
+
+
+
+# flatten list
+
+# lists=[[1,2,3],[5,3,6]]
+# new_list=[]
+# for i in range(len(lists)):
+#     for j in lists[i]:
+#         new_list.append(j)
+# print(new_list)
+
+
+# # if the list has only a single ements then the error will be thrown as the int object is not iterable as
+
+#  Problem in Your Code
+
+# The issue is here:
+
+# for j in lists[i]:
+# lists[i] is not always a list
+# When i = 2 → lists[2] = 6 (an integer)
+# Python cannot iterate over an integer
+
+#  So you will get an error:
+
+# TypeError: 'int' object is not iterable
+
+#  to solve it isinstance should be used
+lists=[[1,2,3],[5,3,6],6,7]
+new_list=[]
+
+
+
+
+# lists=[[1,2,3],[5,3,6]]
+# new_list=[]
+# for i in lists:
+#     for j in i:
+#         new_list.append(j)
+# print(new_list)
+
