@@ -19,3 +19,5 @@ print([i if i>0 else 0 for i in [0,2,3,-8,6]])
 print([len(x) for x in ["murthy","velura"]])
 
 print([x for x in [1,28,6,7,66,9,3,82,63,74,45,8] if x%2==0 and x%3==0])
+
+print("dummy")
