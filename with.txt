@@ -1,0 +1,13 @@
+even
+8
+6
+86
+24
+40
+
+prime numbers from 1 to 20 
+1 2 3 5 7 11 13 17 19 
+names starts with a 
+asap apple 
+names with len >5 
+murthy 
