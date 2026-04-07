@@ -98,3 +98,28 @@ print(new_string)
 
 
 
+def web():
+
+    site="https://srevathi.vercel.app/"
+    mail1="marennagarikurumurthy2005@gmail.com"
+    password1="murthy@0903"
+    mail2="sirigadderevathi@gmail.com"
+    password2="revathi@1909"
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

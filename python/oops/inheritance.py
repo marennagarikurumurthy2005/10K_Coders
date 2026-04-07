@@ -25,6 +25,10 @@
 # e=employee("kurumurthy",1,"19-9-2020",50000)
 # e.emp_det()
 
+
+
+
+
          
 
 # class college:
@@ -314,3 +318,7 @@
 # d.b_details()
 # d.c_details()
 # d.d_details()
+
+
+
+
