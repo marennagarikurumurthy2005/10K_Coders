@@ -1,0 +1,7 @@
+what is monkey patching
+what is generator function and write example
+diff b/w return and yield
+multithreading in python and how
+what is pickling and unpickiling
+
+
