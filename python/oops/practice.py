@@ -50,6 +50,18 @@
 #  multiple , heirarical , hybrid
   
 
+class questions:
+    q1="find the min distance of the fib number to the sum of array"
+    hint="a<sum<b ; a,b are fib numbers"
+    q2="find the time difference of give time interval"
+    input="10:10am-10:30pm"
+    q3="find the list is in arithmetic or geometric sequence else print -1"
+    hint="ap distance between numbers is same , gp ratio of numbers is same"
+    q4="insert * between even numbers - between odd numbers do not consider 0 as even"
+    example="254809763 to 254*809-763"
+
+    
+
 
 
     
