@@ -65,9 +65,9 @@
 // hoisting : calling a function or variable befor its initialization or declaration for named functions its possible 
 
 
-console.log(a);
+// console.log(a);
 
-const a=2
+// const a=2
 
 
 
