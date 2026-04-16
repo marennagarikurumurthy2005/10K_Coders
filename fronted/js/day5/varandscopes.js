@@ -1,3 +1,5 @@
+
+
 //  types of variables let var  const
 
 
@@ -32,10 +34,44 @@
 
 
 
-const a=0
-// a=10 not possible
+// const a=0
+// // a=10 not possible
 
-console.log(a);
+// console.log(a);
+
+
+
+
+
+//  callback functions
+
+
+// const a =(calling)=>{
+//     console.log("This is main function");
+//     calling()
+// }
+// function calling(){
+//     console.log("this is a callback function");
+// }
+// a(calling)
+
+
+
+const available=(current,deposite,calling)=>{
+    console.log(current+deposite);
+    
+    calling()
+
+}
+
+const transaction_status=_=>{
+    console.log("Deposite successfull");
+}
+
+available(1500,400,transaction_status)
+
+
+
 
 
 
