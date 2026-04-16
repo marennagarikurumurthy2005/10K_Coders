@@ -22,7 +22,18 @@
 # print(np.random.rand())
 
 
+# arithmetic and mathematical operations
 
+import numpy as np
+
+ar1=np.array([1,2,3])
+ar2=np.array([4,5,6])
+print(ar1+ar2)
+print(ar1*ar2)
+print(ar2-ar1)
+print(ar2/ar1)
+print(ar1**ar2)
+print(ar2//ar1)
 
 
 
