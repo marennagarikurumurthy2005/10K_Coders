@@ -24,17 +24,14 @@ function parent(){
 //  closures
 
 // closure is the bind between parent and inner most elements and also stored the values of the parents and globals
-const parent=()=>{
-    let a=10
-    const child=()=>{
-        console.log(a)
-        return "closures in js"
-
-    }
-    return child;
-
-}
-
-calling=parent()
-console.log(calling());
+// const parent=()=>{
+//     let a=10
+//     const child=()=>{
+//         console.log(a)
+//         return "closures in js"
+//     }
+//     return child;
+// }
+// calling=parent()
+// console.log(calling());
 
