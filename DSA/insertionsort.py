@@ -1,4 +1,4 @@
-li=[0,2,4,8,-9,9,6,-1,-6]
+# li=[0,2,4,8,-9,9,6,-1,-6]
 # for i in range(1,len(li)):
 #     key=li[i]
 #     index=i-1
@@ -8,7 +8,7 @@ li=[0,2,4,8,-9,9,6,-1,-6]
 #         i-=1
 # print(li)
 
-
+li=[-10,0,2,1,4,8,-9,9,6,-1,-6]
 for i in range(1,len(li)):
     key=li[i]
     index=i-1
@@ -16,5 +16,9 @@ for i in range(1,len(li)):
         li[index+1]=li[index]
         index-=1
     li[index+1]=key
-print(li)        
+print(li)     
+
+
+
+""" exam day1 """
     
