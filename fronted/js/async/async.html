@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UTube</title>
+</head>
+<style>
+
+    /* .mainwrapper{
+        position: relative;
+        padding: 5px;
+    } */
+    video{
+        
+        width: 600px;
+        height: 400px;
+        display: block;
+        border-radius: 10px;
+        
+        
+    }
+    .ads{
+        display: none;
+        width: 600px;
+        height: 400px;
+        background-color: yellowgreen;
+        border-radius: 5px;
+        margin-top: -400px;
+        position:absolute;
+        
+
+    }
+</style>
+<body>
+    <div class="mainwrapper">
+        <div class="video">
+            <video class="vid" src="farewelldance.mp4" autoplay controls></video>  
+        </div>
+        <div class="ads"></div>
+    </div>
+</body>
+<script src="./async.js"></script>
+</html>
