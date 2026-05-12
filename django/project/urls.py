@@ -16,7 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
+from day1 import views,urls
+from django.urls import path, include
+
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('data/',include('day1.urls')),
+    # path('',views.home),
+    # path('name/',views.name),
+    # path('num/',views.num),
+    # path('ads/',views.adds),
+    # path('branch/',views.branch),
+    # path('year/',views.year),
+    # path('father/',views.father),
+    # path('mother/',views.mother),
+    # path('sister/',views.sister),
+    # path('gp/',views.gp),
+    # path('details/',views.details),
+
 ]
