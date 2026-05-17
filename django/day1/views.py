@@ -56,3 +56,6 @@ def gp(request):
 
 def adds(request):
     return HttpResponse(" this is address page")
+
+def registration(request):
+    return HttpResponse("welcome to register page")
