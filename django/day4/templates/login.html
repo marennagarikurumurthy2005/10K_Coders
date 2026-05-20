@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mainwrapper">
+        <div class="fromcontainer">
+            <form action="" method="post" >
+
+                {% csrf_token %}
+                
+                <input type="text" name="username" id="" placeholder="enter username">
+                <input type="email" name="email" placeholder="enter email" id="">
+                <a href="http://127.0.0.1:8000/day4/go"><button type="submit">SUBMIT</button></a>
+                <a href="http://127.0.0.1:8000/day4/go">redirect</a>
+            </form>
+        </div>
+        <div class="tablecontainer">
+            <table>
+                <tr>
+                    <thead>Username</thead>
+                    <thead>Email</thead>
+                </tr>
+                <tr>
+                    <td>{{name}}</td>
+                    <td>{{email}}</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

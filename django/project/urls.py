@@ -16,7 +16,6 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from day1 import views,urls
 from django.urls import path, include
 
 
@@ -25,6 +24,7 @@ urlpatterns = [
     path('data/',include('day1.urls')),
     path('day2/',include('day2.urls')),
     path('templates/',include('day3.urls')),
+    path('day4/',include('day4.urls'))
     # path('',views.home),
     # path('name/',views.name),
     # path('num/',views.num),
