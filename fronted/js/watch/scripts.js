@@ -67,7 +67,7 @@ start.addEventListener("click", () => {
         update(min, sec);
         updateProgress();
 
-    }, 1);
+    }, 1000);
 
 });
 

@@ -24,7 +24,8 @@ urlpatterns = [
     path('data/',include('day1.urls')),
     path('day2/',include('day2.urls')),
     path('templates/',include('day3.urls')),
-    path('day4/',include('day4.urls'))
+    path('day4/',include('day4.urls')),
+    path('day5/',include('day5.urls')),
     # path('',views.home),
     # path('name/',views.name),
     # path('num/',views.num),
