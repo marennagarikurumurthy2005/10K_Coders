@@ -3,7 +3,6 @@ let display=document.getElementById('display')
 let btn=document.getElementById("btn")
 
 
-// age=agedata.textContent
 
 
 btn.addEventListener("click",()=>{
