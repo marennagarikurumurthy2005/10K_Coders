@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="name" id="" placeholder="enter name"> <br>
+        <input type="number" name="rollno" id="" placeholder="rollno" > <br>
+        <input type="number" name="cgpa" placeholder="enter cgpa" id=""> <br>
+        <button type="submit">SUBMIT</button> <br>
+    </form>
+    <table style="border: 1px solid green;">
+        <tr>
+            <td>Name</td>
+            <td>RollNo</td>
+            <td>CGPA</td>
+        </tr>
+
+    {% for i in data %}
+    
+        <tr>
+            <td>{{i.name}}</td>
+            <td>{{i.rollno}}</td>
+            <td>{{i.cgpa}}</td>
+        </tr>
+    
+    
+    
+    {% endfor %}
+    </table>
+
+
+
+</body>
+</html>
