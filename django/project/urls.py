@@ -29,6 +29,7 @@ urlpatterns = [
     path('day6/',include('day6.urls')),
     path('day7/',include('day7.urls')),
     path('day8',include('day8.urls')),
+    path('day9/',include('day9.urls')),
     # path('',views.home),
     # path('name/',views.name),
     # path('num/',views.num),
