@@ -27,6 +27,8 @@ drop Table students;
 -- DML commands
 
 INSERT into students VALUES(2,"deva",23,'2003-03-09');
+INSERT into students VALUES(3,"murthy",23,'2003-03-09');
+
 
 UPDATE students
 set name="devratha"
@@ -39,3 +41,48 @@ SELECT * from students;
 
 
 -- DQL : select and select all
+
+SELECT name , age 
+from students;
+
+--  to select unique records we use distinct
+
+SELECT  DISTINCT name from students;
+
+SELECT DISTINCT * from students;
+
+-- TCL commands
+
+TRUNCATE TABLE students;
+
+SAVEPOINT s1;
+
+
+set autocommit=0;
+INSERT into students(id,name,age,dob)VALUES
+    (1,'Murthy',21,'2005-03-09'),
+    (2,'Devratha',40,'1990-03-08'),
+    (3,'Vardha',39,'1990-09-07');
+
+SAVEPOINT s2;
+
+SELECT * FROM students;
+
+DELETE FROM students
+WHERE id=2;
+SAVEPOINT s3;
+
+-- TRUNCATE Table students;
+
+-- SAVEPOINT s4;
+
+ROLLBACK TO s2;
+
+COMMIT;
+
+
+-- DCL Commands Grant and revoke
+
+GRANT SELECT,UPDATE on students to murthy;
+
+REVOKE SELECT,UPDATE on students from murthy;
