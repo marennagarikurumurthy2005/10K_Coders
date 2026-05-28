@@ -58,7 +58,7 @@ user
 
                 resolve(res)
                 
-            }, 5000);
+            }, 1000);
             
         })
     })
@@ -70,7 +70,7 @@ user
 
                 resolve(res)
                 
-            }, 4000);
+            }, 1000);
         })
 
     })
@@ -80,7 +80,7 @@ user
                 console.log("Dashboard");
                 resolve(res)
                 
-            }, 3000);
+            }, 1000);
         })
     })
     .then((res)=>{
@@ -88,7 +88,7 @@ user
             setTimeout(()=>{
                     console.log("Payment completed",res)
                     resolve(res)
-            },2000);
+            },1000);
         })
     })
     .then((res)=>{
