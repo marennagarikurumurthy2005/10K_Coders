@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="singlewrapper">
+
+        <h1>Single Data</h1>
+        <h2>{{emp.id}}</h2>
+        <h2>{{emp.name}}</h2>
+        <h2>{{emp.salary}}</h2>
+        <h2>{{emp.dept}}</h2>
+        <h2>{{emp.age}}</h2>
+
+
+    </div>
+
+    <button><a href="{% url "home" %}">HOME</a></button>
+    <button><a href="{% url "details" %}">DETAILS</a></button>
+
+</body>
+</html>

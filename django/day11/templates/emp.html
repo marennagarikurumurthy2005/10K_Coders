@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+{% csrf_token %}
+
+        <input type="text" name="name" id="" placeholder="enter name">
+        <input type="text" placeholder="enter dept" name="dept" id="">
+        <input type="number" placeholder="enter age " name="age" id="">
+        <input type="number" name="salary" placeholder="salary" id="">
+        <button type="submit">SUBMIT</button>
+
+    </form>
+    <button><a href="{% url "details" %}">DETAILS</a></button>
+
+</body>
+</html>

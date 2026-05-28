@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table>
+        <tr>
+            <td>Id</td>
+            <td>Name</td>
+        </tr>
+        {% for i in emp %}
+
+        <tr>
+            <td><a href="{% url "single" i.id %}">{{i.id}}</a></td>
+            <td>{{i.name}}</td>
+        </tr>
+        
+        {% endfor %}
+    </table>
+    <button><a href="{% url "home" %}">BACK</a></button>
+</body>
+</html>
