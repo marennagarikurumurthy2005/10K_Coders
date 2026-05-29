@@ -86,3 +86,116 @@ COMMIT;
 GRANT SELECT,UPDATE on students to murthy;
 
 REVOKE SELECT,UPDATE on students from murthy;
+
+
+CREATE table murthy(id INT PRIMARY KEY,name VARCHAR(50));
+
+CREATE Table mk(id INT, Foreign Key (id) REFERENCES murthy(id),name VARCHAR(50));
+
+INSERT INTO murthy VALUES(2,'murthy',25);
+INSERT INTO mk VALUES(1,'Kurumurthy');
+
+SELECT * from murthy;
+
+ALTER Table murthy
+ADD COLUMN age INT CHECK(age>=18) DEFAULT 18;
+
+SELECT * FROM mk;
+
+DROP Table murthy;
+
+DROP Table mk;
+
+SELECT COUNT(*) FROM murthy;
+
+show tables;
+
+use inter;
+
+show TABLES;
+
+create table student(id INT PRIMARY KEY AUTO_INCREMENT,name VARCHAR(50),fee INT);
+
+INSERT INTO student(name, fee)
+VALUES
+    ('Manikanta', 50000),
+    ('Manohar', 45000);
+    -- ('Kiran', 60000),
+    -- ('Vardha', 55000),
+    -- ('Devratha', 70000);
+
+SELECT * from student;
+
+CREATE Table dept(id INT , FOREIGN Key(id) REFERENCES student(id),department VARCHAR(50));
+
+INSERT INTO dept(id, department)
+VALUES
+    (1, 'CSE'),
+    (2, 'ECE'),
+    (3, 'AI & DS'),
+    (4, 'MECH'),
+    (5, 'CIVIL');
+
+SELECT * FROM dept;
+
+TRUNCATE Table dept;
+
+
+-- inner join
+
+SELECT * from student
+INNER JOIN dept 
+on student.id=dept.id;
+
+
+SELECT * from student 
+LEFT JOIN dept
+on student.id=dept.id;
+
+SELECT * from dept;
+SELECT* from student;
+
+SELECT * FROM student
+RIGHT JOIN dept
+ON student.id=dept.id;
+
+
+
+--  it does nit works in mysql alternatively union left and right joins 
+-- SELECT * FROM student 
+-- FULL OUTER JOIN dept
+-- on student.id=dept.id;
+use inter;
+
+SELECT * FROM student
+LEFT JOIN dept
+on student.id=dept.id
+UNION
+SELECT * FROM student
+RIGHT JOIN dept
+on student.id=dept.id;
+
+SELECT * FROM student as s
+JOIN student 
+on s.id=student.id;
+
+SELECT * FROM student
+CROSS JOIN dept;
+
+
+-- sub queries 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
