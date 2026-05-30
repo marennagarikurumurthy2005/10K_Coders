@@ -209,6 +209,154 @@ SELECT AVG(fee) from student; --53000
 SELECT * from student
 WHERE fee in (70000,45000);
 
+use inter;
+
+SELECT * from student;
+
+SELECT name from student
+WHERE name LIKE 'M%';
+
+
+--  creating view
+
+CREATE View student_view AS
+SELECT name,fee from student;
+
+SELECT * from student_view;
+
+use inter;
+
+DROP VIEW student_view;
+
+
+CREATE INDEX student_index
+on student(id);
+
+SELECT * from student
+WHERE(name='Murthy');
+
+
+CREATE Procedure fetchDetails()
+begin
+
+SELECT * from student
+WHERE(fee>48000);
+
+END;
+
+CALL fetchDetails();
+
+
+create Procedure left_Join()
+BEGIN
+
+SELECT * FROM student
+LEFT JOIN dept
+on student.id=dept.id;
+
+END;
+
+call left_Join();
+
+use inter;
+
+-- CREATE Procedure inner_Join()
+-- begin
+
+-- SELECT  id, name,fee,department from student 
+-- INNER JOIN dept
+-- on student.id=dept.id;
+
+-- END;
+DROP Procedure inner_Join;
+
+CREATE Procedure inner_Join()
+begin
+
+SELECT  student.id, name,fee,department from student 
+INNER JOIN dept
+on student.id=dept.id;
+
+END;
+
+CALL inner_Join();
+
+use inter;
+
+use 10kc;
+DROP TABLE cartItems;
+
+DROP TABLE addtocart;
+
+
+CREATE TABLE addtoCart(
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    name VARCHAR(500)
+);
+
+CREATE TABLE cartItems(
+    item_id INT PRIMARY KEY AUTO_INCREMENT,
+    cart_id INT,
+    name VARCHAR(500),
+    FOREIGN KEY (cart_id) REFERENCES addtoCart(id)
+);
+
+
+
+
+-- CREATE table addtoCart(id INT PRIMARY KEY AUTO_INCREMENT,name VARCHAR(500));
+-- create Table cartItems(id INT AUTO_INCREMENT, FOREIGN key(id) REFERENCES addtoCart(id),name VARCHAR(500));
+
+
+
+-- triggers
+
+
+
+CREATE Trigger cartTrigger
+AFTER INSERT on addtoCart
+for each ROW
+BEGIN
+INSERT INTO cartItems(cart_id,name)
+VALUES(NEW.id,NEW.name);
+END;
+
+INSERT INTO addtoCart(name)
+VALUES('laptop'),
+('mobile'),
+('fridge');
+
+SELECT * FROM addtoCart;
+
+SELECT * FROM cartItems;
+
+CREATE Trigger delTrigger
+BEFORE DELETE on cartItems
+for EACH ROW
+begin
+
+DELETE from addtoCart
+WHERE id=OLD.id;
+
+
+END;
+
+DELETE from addtoCart
+WHERE(id=3);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
