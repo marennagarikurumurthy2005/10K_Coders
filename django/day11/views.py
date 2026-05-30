@@ -27,3 +27,25 @@ def Details(request):
 def Single(request,id):
     emp=Employee.objects.get(id=id)
     return render(request,"single.html",{"emp":emp})
+
+def Update(request,id):
+    emp=Employee.objects.get(id=id)
+    if request.method=="POST":
+        name=request.POST.get("name")
+        dept=request.POST.get("dept")
+        age=request.POST.get("age")
+        salary=request.POST.get("salary")
+
+        emp.name=name
+        emp.dept=dept
+        emp.age=age
+        emp.salary=salary
+        emp.save()
+
+        return redirect('single',id=emp.id)
+    return render(request,'update.html',{'emp':emp})
+
+def Delete(request,id):
+    emp=Employee.objects.get(id=id)
+    emp.delete()
+    return redirect('details')
