@@ -185,6 +185,31 @@ CROSS JOIN dept;
 
 -- sub queries 
 
+use inter;
+
+SELECT * from student
+WHERE id in (SELECT id from dept 
+where(department='CSE'));
+
+-- exist
+SELECT * 
+from student
+where EXISTS(SELECT *
+from dept
+where student.id=dept.id);
+
+SELECT * from student;
+
+SELECT MAX(fee) from student; --70000
+
+SELECT MIN(fee) from student; --45000
+
+SELECT AVG(fee) from student; --53000
+
+SELECT * from student
+WHERE fee in (70000,45000);
+
+
 
 
 
