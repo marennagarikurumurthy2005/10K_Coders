@@ -438,6 +438,52 @@ COMMIT//
 
 DELIMITER;
 
+use inter;
+
+SHOW TABLEs;
+
+
+
+SELECT * from sbi;
+
+-- second heighest salary
+SELECT MAX(balance) 
+from sbi 
+where balance<(SELECT max(balance)
+from sbi);
+
+
+SELECT DISTINCT balance
+from sbi
+ORDER BY balance DESC
+LIMIT 1 OFFSET 4;
+
+
+SELECT name,count(*)
+from sbi
+GROUP BY name 
+HAVING COUNT(*)>1;
+
+
+-- DELETE from sbi
+-- where id not in (
+--     SELECT min(id)
+--     from sbi
+--     GROUP BY name
+-- );
+
+use inter;
+
+DELETE from sbi
+where id not in (
+SELECT id from (
+    SELECT MIN(id) as id
+    from sbi
+    GROUP BY name
+) as temp
+);
+
+
 
 
 
