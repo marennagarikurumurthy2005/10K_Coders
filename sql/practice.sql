@@ -407,7 +407,36 @@ SELECT village_id,fam_id,name,nirven.num
 from nirven inner JOIN kothakota
 on nirven.id=kothakota.fam_id;
 
+CREATE table sbi(id int PRIMARY key AUTO_INCREMENT,name VARCHAR(200),balance INT);
 
+INSERT INTO sbi(name, balance)
+VALUES
+    ('Murthy', 50000),
+    ('Ravi', 35000),
+    ('Kiran', 75000),
+    ('Vardha', 42000),
+    ('Devratha', 100000);
+
+
+
+--  transactions in sql
+set autocommit=0;
+
+SELECT * FROM sbi;
+
+DELIMITER//
+
+START TRANSACTION//
+UPDATE sbi
+set balance=balance-100
+WHERE id=1//
+UPDATE sbi
+set balance=balance+100
+WHERE id=5//
+COMMIT//
+
+
+DELIMITER;
 
 
 
