@@ -344,6 +344,70 @@ END;
 DELETE from addtoCart
 WHERE(id=3);
 
+drop TABLE nirven;
+use 10kc;
+
+
+use inter;
+TRUNCATE Table nirven;
+
+DROP Trigger pop_trigger;
+
+CREATE table nirven(id int PRIMARY KEY AUTO_INCREMENT, name VARCHAR(200), num INT);
+
+
+
+CREATE Table kothakota(village_id INT AUTO_INCREMENT PRIMARY key , fam_id INT, num INT );
+
+
+CREATE Trigger pop_trigger
+AFTER INSERT on nirven
+for each row 
+BEGIN
+
+INSERT INTO kothakota(fam_id,num) 
+VALUES(NEW.id,NEW.num);
+
+
+
+END;
+
+
+
+
+
+
+
+INSERT INTO nirven(name, num)
+VALUES
+    ('Murthy', 101),
+    ('Ravi', 102),
+    ('Kiran', 103),
+    ('Vardha', 104),
+    ('Devratha', 105);
+
+
+INSERT INTO nirven(name, num)
+VALUES
+    ('Suresh', 106),
+    ('Mahesh', 107),
+    ('Ajay', 108),
+    ('Ramesh', 109),
+    ('Praveen', 110);
+
+SELECT * from nirven;
+
+SELECT * from kothakota;
+
+TRUNCATE Table kothakota;
+
+
+
+SELECT village_id,fam_id,name,nirven.num 
+from nirven inner JOIN kothakota
+on nirven.id=kothakota.fam_id;
+
+
 
 
 
