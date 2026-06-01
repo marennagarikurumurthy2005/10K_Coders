@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="branch" value="{{college.branch}}" placeholder="Enter branch" id="">
+        <input type="text" name="hod" value="{{college.hod}}" placeholder="enter hod name" id="">
+        <input type="text" name="salary" value="{{college.salary}}" placeholder="hod salary" id="">
+        <input type="text" name="staff" value="{{college.staff}}" placeholder="number of staff" id="">
+        <input type="text" name="students" value="{{college.students}}" placeholder="number of stdents" id="">
+        <button type="submit">Update</button>
+        
+    </form>
+    
+</body>
+</html>

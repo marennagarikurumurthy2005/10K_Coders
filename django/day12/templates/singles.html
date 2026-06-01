@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>{{college.id}}</h1>
+    <h1>{{college.hod}}</h1>
+    <h1>{{college.salary}}</h1>
+    <h1>{{college.branch}}</h1>
+    <h1>{{college.staff}}</h1>
+    <h1>{{college.students}}</h1>
+</body>
+<button><a href="{% url "details" %}">Details</a></button>
+<button><a href="{% url "update" college.id %}">Update</a></button>
+<button><a href="{% url "delete" college.id %}">Delete</a></button>
+</html>

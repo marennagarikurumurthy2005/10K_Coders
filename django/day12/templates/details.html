@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <table style="border: 2px solid">
+      <tr>
+        <th>Id</th>
+        <th>branch</th>
+        <th>hod</th>
+        <th>salary</th>
+        <th>staff</th>
+        <th>students</th>
+      </tr>
+      {% for i in college %}
+      <tr>
+
+        <td><a href="{% url "single" i.id %}">{{i.id}}</a></td>
+        <td>{{i.branch}}</td>
+        <td>{{i.hod}}</td>
+        <td>{{i.salary}}</td>
+        <td>{{i.staff}}</td>
+        <td>{{i.students}}</td>
+        
+      </tr>
+
+      {% endfor %}
+    </table>
+
+    <button><a href="{% url "create" %}">Home</a></button>
+
+
+  </body>
+</html>

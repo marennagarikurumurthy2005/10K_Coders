@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form action="" method="post">
+        {% csrf_token %}
+        <input type="text" name="branch" placeholder="Enter branch" id="">
+        <input type="text" name="hod" placeholder="enter hod name" id="">
+        <input type="text" name="salary" placeholder="hod salary" id="">
+        <input type="text" name="staff" placeholder="number of staff" id="">
+        <input type="text" name="students" placeholder="number of stdents" id="">
+        <button type="submit">SUBMIT</button>
+
+    </form>
+    <button><a href="{% url "details" %}">Details</a></button>
+</body>
+</html>
