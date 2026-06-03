@@ -28,14 +28,15 @@ def Create(request):
     return render(request,'from.html')
 
 def Display(request):
-    
-
     standard=Standard.objects.all()
-
-   
-
-
     return render(request,'view.html',{'data':standard})
+
+
+def Single(request,id):
+    data=Standard.objects.get(id=id)
+    return render(request,'si.html',{"data":data})
+
+
 
 
     

@@ -9,6 +9,8 @@
    
 {% for i in data %}
 
+
+<h1><a href="{% url "single13" i.id %}">{{i.id}}</a></h1>
 <h1>{{i.school.stand}}</h1>
 <h1>{{i.school.classroom}}</h1>
 <h1>{{i.strength}}</h1>

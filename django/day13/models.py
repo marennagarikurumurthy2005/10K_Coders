@@ -14,3 +14,8 @@ class Standard(models.Model):
     teacher=models.CharField(max_length=50)
     cr=models.CharField(max_length=50)
 
+
+
+
+
+
