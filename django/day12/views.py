@@ -1,5 +1,5 @@
 from django.shortcuts import render,redirect
-from .models import College
+from .models import College,History
 
 # Create your views here.
 
@@ -33,8 +33,15 @@ def Single(request,id):
 
 def Delete(request,id):
     data=College.objects.get(id=id)
+    History.objects.create(
+        branch=data.branch,
+        hod=data.hod,
+        salary=data.salary,
+        staff=data.staff,
+        students=data.students
+    )
     data.delete()
-    return  redirect('details')
+    return  redirect('history')
 
 
 def Update(request,id):
@@ -56,3 +63,25 @@ def Update(request,id):
         return redirect('single',id=data.id)
 
     return render(request,'updates.html',{"college":data})
+
+def History_view(request):
+    hist=History.objects.all()
+    return render(request,'history.html',{'hist':hist})
+
+def Delper(request,id):
+    data=History.objects.get(id=id)
+    data.delete()
+    return redirect('history')
+
+def Retrive(request,id):
+    data=History.objects.get(id=id)
+    College.objects.create(
+            branch=data.branch,
+            hod=data.hod,
+            salary=data.salary,
+            staff=data.staff,
+            students=data.students
+        )
+    data.delete()
+    return redirect('history')
+    

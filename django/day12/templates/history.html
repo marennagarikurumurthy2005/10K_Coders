@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table style="border:1px solid">
+        <tr>
+            <th>ID</th>
+            <th>Branch</th>
+            <th>HOD</th>
+            <th>Salary</th>
+            <th>Staff</th>
+            <th>Students</th>
+            <th></th>
+            <th></th>
+        </tr>
+        {% for i in hist %}
+        <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.branch}}</td>
+        <td>{{i.hod}}</td>
+        <td>{{i.salary}}</td>
+        <td>{{i.staff}}</td>
+        <td>{{i.students}}</td>
+
+        <td><button><a href="{% url "delete_per" i.id %}">Delete</a></button></td>
+        <td><button><a href="{% url "retrive" i.id %}">Retrive</a></button></td>
+            </tr>
+        
+        {% endfor %}
+    </table>
+
+    <button><a href="{% url "details" %}">Details</a></button>
+</body>
+</html>

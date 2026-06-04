@@ -35,19 +35,19 @@
 
 
 // array methods
-let arr=[1,2]
-console.log(arr.lastIndexOf(2));
-arr.push(10,20,30,40)
-arr.pop()
-arr.unshift(40)
-arr.shift()
-console.log((arr));
+// let arr=[1,2]
+// console.log(arr.lastIndexOf(2));
+// arr.push(10,20,30,40)
+// arr.pop()
+// arr.unshift(40)
+// arr.shift()
+// console.log((arr));
 
-console.log((arr.slice(0,2)));
+// console.log((arr.slice(0,2)));
 
-console.log(arr.splice(3,2,7,6,9));
+// console.log(arr.splice(3,2,7,6,9));
 
-console.log(arr);
+// console.log(arr);
 
 
 
@@ -69,6 +69,99 @@ console.log(arr);
 // find index --same but searvches from right 
 // join -- used to join the list elements with seperator
 // lengh -- returns the len of arr 
+
+
+// sort
+
+// foreach
+
+// let arr=[1,5,6,8,3,10]
+// arr.forEach((e)=>{
+//     console.log(e);
+// })
+// console.log(out);
+
+// let arr=[1,5,6,8,3,10]
+
+// let mapping=arr.map((e)=>{
+
+//     return e>2
+
+// })
+
+// console.log(mapping);
+
+
+// let arr=[1,5,6,8,3,10,11]
+
+// let filtering=arr.filter((e)=>{
+
+//     return e>10
+
+// })
+// console.log(filtering);
+
+
+//  reduce
+
+// let arr=[1,5,6,8,3,10]
+// let reduced=arr.reduce((e,f)=>{
+//     return e+f
+// })
+// console.log(reduced);
+
+// sort 
+// let arr=[1,5,6,8,3,10]
+// console.log(arr.sort());
+
+
+
+// let sorted=arr.sort((e,f)=>{
+//     return e-f
+// })
+// console.log(sorted);
+
+
+// some 
+
+// let arr=[1,5,6,8,3,10]
+
+// let few=arr.some((e)=>{
+//     return a>5
+// })
+// console.log(few);
+
+// every
+
+// let arr=[1,5,6,8,3,10]
+// let everything=arr.every((e)=>{
+//     return e>10
+// })
+
+// console.log(everything);
+
+
+// let arr=[1,5,6,8,3,10]
+// let finding=arr.find((e)=>{
+//     return e==2
+// })
+
+// console.log(finding);
+
+let arr=[1,5,6,8,3,10]
+let ind=arr.findIndex((e)=>{
+    return e>5
+})
+
+console.log(ind);
+
+
+
+
+
+
+
+
 
 
 
