@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Update Todo</title>
+
+<style>
+
+body{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+    background:#f4f6f9;
+    font-family:Segoe UI;
+}
+
+.box{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+input,textarea,select{
+    width:100%;
+    margin:10px 0;
+    padding:12px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    background:#4CAF50;
+    color:white;
+    border-radius:8px;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="box">
+
+<h2>Update Task</h2>
+
+<form method="POST">
+{% csrf_token %}
+
+<input type="text"
+name="name"
+value="{{data.name}}">
+
+<textarea
+name="description">{{data.description}}</textarea>
+
+<select name="priority">
+
+<option {% if data.priority == 'High' %}selected{% endif %}>
+High
+</option>
+
+<option {% if data.priority == 'Medium' %}selected{% endif %}>
+Medium
+</option>
+
+<option {% if data.priority == 'Low' %}selected{% endif %}>
+Low
+</option>
+
+</select>
+
+<select name="status">
+
+<option {% if data.status == 'Pending' %}selected{% endif %}>
+Pending
+</option>
+
+<option {% if data.status == 'Completed' %}selected{% endif %}>
+Completed
+</option>
+
+</select>
+
+<button type="submit">
+Update Task
+</button>
+
+</form>
+
+</div>
+
+</body>
+</html>

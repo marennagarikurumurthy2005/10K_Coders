@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Todo App</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Segoe UI;
+}
+
+body{
+    background:#f4f6f9;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:450px;
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 20px rgba(0,0,0,.15);
+}
+
+h1{
+    text-align:center;
+    margin-bottom:20px;
+    color:#333;
+}
+
+input,textarea,select{
+    width:100%;
+    padding:12px;
+    margin:10px 0;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+button{
+    width:100%;
+    padding:12px;
+    background:#4CAF50;
+    border:none;
+    color:white;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#45a049;
+}
+
+.links{
+    margin-top:20px;
+    text-align:center;
+}
+
+.links a{
+    text-decoration:none;
+    margin:10px;
+    color:#2196F3;
+    font-weight:bold;
+}
+
+</style>
+
+</head>
+<body>
+
+<div class="container">
+
+<h1>Create Todo</h1>
+
+<form method="POST">
+{% csrf_token %}
+
+<input type="text" name="name" placeholder="Task Name">
+
+<textarea name="description" placeholder="Description"></textarea>
+
+<select name="priority">
+    <option>High</option>
+    <option>Medium</option>
+    <option>Low</option>
+</select>
+
+<select name="status">
+    <option>Pending</option>
+    <option>Completed</option>
+</select>
+
+<button type="submit">Add Task</button>
+
+</form>
+
+<div class="links">
+    <a href="{% url 'details' %}">Details</a>
+    <a href="{% url 'history' %}">History</a>
+</div>
+
+</div>
+
+</body>
+</html>
