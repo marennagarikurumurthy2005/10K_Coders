@@ -51,7 +51,12 @@
 #         print("false")
 
 
-
+def gen():
+    yield 1
+    yield 2
+ar=gen()
+print(ar.__next__())
+print(ar.__next__())
 
 
 

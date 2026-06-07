@@ -1,6 +1,7 @@
 from django.shortcuts import render,redirect
 from .models import todo,tododistory
 
+
 # Create your views here.
 
 def create(request):
