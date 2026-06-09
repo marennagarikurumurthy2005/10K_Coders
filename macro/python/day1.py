@@ -56,58 +56,79 @@
 # ● Use lambda functions
 
 
-def factorial(num):
-    if num==1:
-        return num
-    return num*factorial(num-1)
+# def factorial(num):
+#     if num==1:
+#         return num
+#     return num*factorial(num-1)
 
-square=lambda x: x**2
+# square=lambda x: x**2
 
-def getting(*data):
-    for i in data:
+# def getting(*data):
+#     for i in data:
         
-        try:
-            ren=eval(i)
-            print(ren)
-        except:
-            print("invalid expression")
+#         try:
+#             ren=eval(i)
+#             print(ren)
+#         except:
+#             print("invalid expression")
         
 
 
-while True:
+# while True:
 
-    choice=input("enter 1 for arithmetic(+,-,*,/) , 2 for others")
+#     choice=input("enter 1 for arithmetic(+,-,*,/) , 2 for others")
 
-    if choice=="1":
-        exp=input("Enter Expression for multi operations seperate with comas")
-        cal=tuple(exp.split(","))
-        print(exp)
-        print(cal)
-        getting(*cal)
+#     if choice=="1":
+#         exp=input("Enter Expression for multi operations seperate with comas")
+#         cal=tuple(exp.split(","))
+#         print(exp)
+#         print(cal)
+#         getting(*cal)
 
-    elif choice=="2":
-        built_op=input("enter 1 for factorial, 2 for square root")
-        if built_op=="1":
-            fac=int(input("enter number for factorial calculation:"))
+#     elif choice=="2":
+#         built_op=input("enter 1 for factorial, 2 for square root")
+#         if built_op=="1":
+#             fac=int(input("enter number for factorial calculation:"))
 
-            if fac>0:
-                res=factorial(fac)
-                print(res)
+#             if fac>0:
+#                 res=factorial(fac)
+#                 print(res)
 
-            elif fac==0:
-                print("1")
-            else:
-                print("Not able to calculate")
+#             elif fac==0:
+#                 print("1")
+#             else:
+#                 print("Not able to calculate")
                 
 
-        elif built_op=="2":
-            sq=int(input("enter number"))
-            asqr=square(sq)
-            print(asqr)
-    else:
-        print("invalid choice")
-        break
+#         elif built_op=="2":
+#             sq=int(input("enter number"))
+#             asqr=square(sq)
+#             print(asqr)
+#     else:
+#         print("invalid choice")
+#         break
         
+
+# Task 3: Safe File Reader
+# Objective: Read files safely with proper error handling.
+# Input: File name
+# Expected Output: File contents or user-friendly error message
+# Mandatory Requirements:
+# ● Use with statement
+# ● Handle FileNotFoundError
+# ● Use finally
+
+kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt'
+
+try:
+    with open(kohli,'r') as f:
+        data=f.readline()
+        print(data)
+except Exception as e:
+    print(f'Error {e}')
+
+finally:
+    print("Exicution completed")
 
         
 
