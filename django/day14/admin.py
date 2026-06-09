@@ -8,3 +8,4 @@ admin.site.register(vr)
 admin.site.register(Kukat)
 admin.site.register(Col)
 
+

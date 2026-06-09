@@ -52,6 +52,7 @@ INSTALLED_APPS = [
     'day12',
     'day13',
     'day14',
+    'day15',
 ]
 
 MIDDLEWARE = [
