@@ -118,19 +118,63 @@
 # ● Handle FileNotFoundError
 # ● Use finally
 
-kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt'
+# kohli=r'C:\Users\maren\10KCoders\macro\python\kohlis.txt'
 
+# try:
+#     with open(kohli,'r') as f:
+#         data=f.readline()
+#         print(data)
+# except Exception as e:
+#     print(f'Error {e}')
+
+# finally:
+#     print("Exicution completed")
+
+
+# Task 4: Text File Analyzer
+# Objective: Analyze a text file efficiently.
+# Input: Text file
+# Expected Output:
+# ● Line count
+# ● Word count
+# Mandatory Requirements:
+# ● Use generator for file reading
+# ● Use list comprehension
+# ● Use decorator to log execution time
+
+from time import perf_counter
+kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt' 
 try:
-    with open(kohli,'r') as f:
-        data=f.readline()
-        print(data)
+    line_count=0
+    word_count=0
+    def genrator(time):
+        with open(kohli,'r') as file:
+            for line in file:
+                print(line)
+                line_count=1
+                time()
+                yield line
+    @genrator
+    def timer():
+        t=perf_counter()
+        print(t)
+    timer()
+    
+    gen=genrator(timer)
+
+    for i in range(line_count):
+        data=next(gen)
+        for i in data:
+            word_count+=1
+    
+    print(word_count)
+    print(line_count)
 except Exception as e:
-    print(f'Error {e}')
-
+    print(f"Error",e)
 finally:
-    print("Exicution completed")
+    print("Completion of process")
+    
 
-        
 
 
             
