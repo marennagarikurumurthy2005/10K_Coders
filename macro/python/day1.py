@@ -131,48 +131,121 @@
 #     print("Exicution completed")
 
 
-# Task 4: Text File Analyzer
-# Objective: Analyze a text file efficiently.
-# Input: Text file
-# Expected Output:
-# ● Line count
-# ● Word count
-# Mandatory Requirements:
-# ● Use generator for file reading
-# ● Use list comprehension
-# ● Use decorator to log execution time
+# # Task 4: Text File Analyzer
+# # Objective: Analyze a text file efficiently.
+# # Input: Text file
+# # Expected Output:
+# # ● Line count
+# # ● Word count
+# # Mandatory Requirements:
+# # ● Use generator for file reading
+# # ● Use list comprehension
+# # ● Use decorator to log execution time
 
 from time import perf_counter
-kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt' 
-try:
-    line_count=0
-    word_count=0
-    def genrator(time):
-        with open(kohli,'r') as file:
-            for line in file:
-                print(line)
-                line_count=1
-                time()
-                yield line
-    @genrator
-    def timer():
-        t=perf_counter()
-        print(t)
-    timer()
-    
-    gen=genrator(timer)
 
-    for i in range(line_count):
-        data=next(gen)
-        for i in data:
-            word_count+=1
+file=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
+
+def timer(func):
+    def wrapper(args):
+        start=perf_counter()
+        res=func(args)
+        end= perf_counter()
+        print(end-start)
+        return res
+    return wrapper
     
-    print(word_count)
+def reading(file_name):
+    with open(file_name,'r') as file:
+        for line in file:
+            yield line
+
+@timer
+def func(file_name):
+    word_count=0
+    line_count=0
+    for line in reading(file_name):
+        line_count+=1
+        words=[word for word in line.split()]
+        word_count+=len(words)
     print(line_count)
+    print(word_count)
+
+try:
+    func(file)
 except Exception as e:
-    print(f"Error",e)
+    print(e)
 finally:
-    print("Completion of process")
+    print("exicution completed")
+
+
+
+
+
+
+
+
+# from time import perf_counter
+# kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt' 
+# try:
+#     line_count=0
+#     word_count=0
+#     start=perf_counter()
+#     def genrator(func):
+#         with open(kohli,'r') as file:
+#             data=file.readlines()
+#             for line in data:
+#                 line_count+=1
+#                 yield line
+#             func()
+#     end=perf_counter()
+#     @genrator
+#     def timer(start,end):
+#         return end-start
+#     timer(start,end)
+#     # time=0
+#     # gen=genrator(time)
+#     print(line_count)
+#     print(word_count)
+# except Exception as e:
+#     print(e)
+# finally:
+#     print("End of exicution")
+
+
+
+
+# from time import perf_counter
+# kohli=r'C:\Users\maren\10KCoders\macro\python\kohli.txt' 
+# try:
+#     line_count=0
+#     word_count=0
+#     def genrator(time):
+#         with open(kohli,'r') as file:
+#             for line in file:
+#                 print(line)
+#                 line_count=1
+#                 time()
+#                 yield line
+#     @genrator
+#     def timer():
+#         t=perf_counter()
+#         print(t)
+#     timer()
+    
+#     gen=genrator(timer)
+
+#     for i in range(line_count):
+#         data=next(gen)
+#         for i in data:
+#             word_count+=1
+    
+#     print(word_count)
+#     print(line_count)
+# except Exception as e:
+#     print(f"Error",e)
+# finally:
+#     print("Completion of process")
     
 
 
