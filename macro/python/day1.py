@@ -281,32 +281,108 @@
 # ● Private balance variable
 
 
-class Account:
-    def __init__(self):
-        self.bankname="SBI"
-        self.branch="Kothakota"
-    def bank_details(self):
-        print(self.bankname)
-        print(self.branch)
+# class Account:
+#     def __init__(self):
+#         self.bankname="SBI"
+#         self.branch="Kothakota"
+#     def bank_details(self):
+#         print(self.bankname)
+#         print(self.branch)
 
-class SavingsAccount(Account):
-    def __init__(self):
-        super().__init__()
-        self.username="Murthy"
-        self.acc_number="XXXXXXXX7125"
-        self.__savings=5000
+# class SavingsAccount(Account):
+#     def __init__(self):
+#         super().__init__()
+#         self.username="Murthy"
+#         self.acc_number="XXXXXXXX7125"
+#         self.__savings=5000
     
-    def balance(self):
-        super().bank_details()
-        print(self.username)
-        print(self.acc_number)
-        print(self.__savings)
+#     def balance(self):
+#         super().bank_details()
+#         print(self.username)
+#         print(self.acc_number)
+#         print(self.__savings)
 
-obj=SavingsAccount()
-obj.balance()
+# obj=SavingsAccount()
+# obj.balance()
 
         
         
+# Task 7: Resource Manager & Iterator
+# Objective: Implement custom context manager and iterator
+
+# 1 custom iterator to print even numbers from 1 to n
+
+
+# class even:
+#     def __init__(self,num):
+#         self.num=num
+#         self.start=0
+
+#     # used to create a iterator
+#     def __iter__(self):
+#         return self
+    
+#     def __next__(self):
+#         while self.start<self.num:
+#             value=self.start
+#             self.start+=1
+#             if value%2==0:
+#                 return value
+#         else:
+#             raise StopIteration
+        
+
+
+
+        # self.value=self.start
+        
+        # if self.value>=self.num:
+        #     raise StopIteration
+
+        # if self.value %2==0:
+        #     self.start+=1
+        #     return self.value
+        # else:
+        #     self.start+=1
+        #  it is returning none at even number
+
+# iterator=even(10)
+# for i in iterator:
+#     print(i)
+
+
+file_path=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
+class myContext:
+    def __init__(self,file_name):
+        self.file_name=file_name
+    def __enter__(self):
+
+        self.data=open(self.file_name,'r')
+        print("file opened")
+        return self.data
+    
+    def __exit__(self, exc_type, exc, tb):
+        self.data.close()
+        print("file closed")
+        if exc_type is not None:
+            print(exc_type)
+    
+with myContext(file_path) as c:
+    raw=c.read()
+    print(raw)
+    
+
+        
+        
+
+
+
+
+
+
+        
+    
+
 
 
 
