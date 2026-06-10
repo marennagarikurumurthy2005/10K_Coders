@@ -1,0 +1,401 @@
+#=======================================================================
+Python=====================================================================
+#=======================================================================
+SECTION 1: Python Fundamentals (Concepts 1–10)
+Concepts
+
+1. What is Python?
+2. What are the key features of Python?
+3. What is the difference between Python 2 and Python 3?
+4. Why is Python called an interpreted language?
+5. What are the major applications of Python?
+6. What is PEP 8?
+7. What are Python’s built-in data types?
+8. What is the difference between a list and a tuple?
+9. What is a dictionary in Python?
+10. What is a set?
+
+
+SECTION 2: Variables, Input & Functions (Concepts
+11–20)
+Concepts
+
+11. How do you create variables in Python?
+12. How do you take user input?
+13. What is type casting?
+14. What are built-in functions?
+15. Difference between is and ==
+16. What is a function?
+17. Difference between return and print
+18. What are *args and **kwargs?
+19. What is a lambda function?
+20. What is recursion?
+
+SECTION 3: Exception Handling & Modules (Concepts
+21–30)
+Concepts
+
+21. What is exception handling?
+22. What is try-except?
+23. What is the finally block?
+24. What is a module?
+25. What is a package?
+26. How do you import modules?
+27. What are built-in modules?
+28. What is the with statement?
+29. What are comments?
+30. How do you write multi-line comments?
+
+SECTION 4: Files & Iteration (Concepts 31–40)
+Concepts
+
+31. What are docstrings?
+32. How do you read a file?
+33. Difference between r and rb
+34. How do you write to a file?
+35. What is list comprehension?
+36. What is a generator?
+37. Generator vs iterator
+38. What are decorators?
+39. What is pass?
+40. What is None?
+
+SECTION 5: Memory, Scope & OOP Basics (Concepts
+41–50)
+Concepts
+
+41. Mutable vs immutable
+42. What is slicing?
+43. What is del?
+44. Global vs local variables
+45. global keyword
+46. Variable scope
+47. Namespace
+48. Indentation
+49. Identifier rules
+50. What is OOP?
+
+SECTION 6: Object-Oriented Programming (Concepts
+51–60)
+Concepts
+
+51. Classes and objects
+52. __init__
+53. Instance vs class variables
+54. Inheritance
+55. Types of inheritance
+56. Polymorphism
+57. Encapsulation
+58. Method overloading
+59. Method overriding
+60. @staticmethod vs @classmethod
+
+SECTION 7: Advanced Python Internals (Concepts 61–70)
+Concepts
+61. Memory management
+62. Garbage collection
+63. Magic methods
+64. __str__
+65. Shallow vs deep copy
+66. Metaclasses
+67. Iterators
+68. Custom iterator
+69. Context manager
+70. Closures
+
+SECTION 8: Data Structures (Concepts 71–80)
+Concepts
+71. Python data structures
+72. Stack using list
+73. Queue using deque
+74. append vs extend
+75. Set use cases
+76. Set operations
+77. Remove duplicates
+78. Merge dictionaries
+79. enumerate
+80. zip
+
+SECTION 9: Functional Programming & Regex (Concepts
+81–90)
+Concepts
+81. map, filter, reduce
+82. Regular expressions
+83. Pattern matching
+84. re module
+85. Virtual environments
+86. pip
+87. Python frameworks
+88. Flask
+89. Django
+90. Data science libraries
+
+SECTION 10: Data Science & Async (Concepts 91–100)
+Concepts
+91. NumPy
+92. Pandas
+93. Matplotlib
+94. Scikit-learn
+95. Handling missing data
+96. loc vs iloc
+97. Read CSV
+98. Write Excel
+99. Coroutines
+100. asyncio
+
+SECTION 11: Concurrency, Testing & APIs (Concepts
+101–130)
+Concepts
+101. Multithreading
+102. GIL
+103. Multiprocessing
+104. Thread vs process
+105. Queue module
+106. Daemon threads
+107. Debugging
+108. Logging levels
+109. Testing
+110. Unit testing
+111. unittest
+112. pytest
+113. Mocking
+114. Monkey patching
+115. Serialization
+116. Pickle
+117. JSON handling
+118. Database connection
+119. SQLite
+120. MySQL
+121. SQLAlchemy
+122. API data fetching
+123. requests module
+124. Design patterns
+125. Singleton
+126. Factory Method
+127. Observer
+128. Best practices
+129. List comprehension vs map
+130. timeit
+
+SECTION 12: Modern & Advanced Python (Concepts
+131–150)
+Concepts
+131. Profiling
+132. Assertions
+133. Memory leaks
+134. Type hints
+135. Dataclasses
+136. Frozen dataclasses
+137. Walrus operator
+138. Pattern matching (3.10+)
+139. f-strings
+140. __slots__
+141. globals & locals
+142. eval & exec
+143. Recursion limits
+144. Tail recursion
+145. Compile-time vs runtime
+146. Python 3.11 features
+147. Optimization techniques
+148. Caching (lru_cache)
+149. Async context managers
+150. Python security best practices
+
+
+
+
+#=======================================================================
+SQL=====================================================================
+#=======================================================================
+
+
+
+SECTION 1: SQL Basics (Concepts 1–10)
+Concepts
+1. What is SQL?
+2. What are databases?
+3. Difference between SQL and NoSQL
+4. What is a table?
+5. What is a row and column?
+6. What is a primary key?
+7. What is a foreign key?
+8. What is a constraint?
+9. What is NULL?
+10. What are SQL data types?
+
+SECTION 2: DDL Commands (Concepts 11–20)
+Concepts
+11. What is DDL?
+12. CREATE statement
+13. ALTER statement
+14. DROP statement
+15. TRUNCATE statement
+16. Difference between DROP and TRUNCATE
+17. NOT NULL constraint
+18. UNIQUE constraint
+19. CHECK constraint
+20. DEFAULT constraint
+
+SECTION 3: DML Commands (Concepts 21–30)
+Concepts
+21. What is DML?
+22. INSERT statement
+23. UPDATE statement
+24. DELETE statement
+25. Difference between DELETE and TRUNCATE
+26. WHERE clause
+27. LIMIT / TOP
+28. ORDER BY
+29. DISTINCT
+30. Handling NULL values
+
+SECTION 4: Filtering & Operators (Concepts 31–40)
+Concepts
+31. Comparison operators
+32. Logical operators
+33. BETWEEN
+34. IN
+35. LIKE
+36. Wildcards
+37. IS NULL / IS NOT NULL
+38. AND vs OR
+39. Aliases
+40. CASE statement
+
+SECTION 5: Aggregate Functions & Grouping (Concepts
+41–50)
+Concepts
+41. COUNT()
+42. SUM()
+43. AVG()
+44. MIN()
+45. MAX()
+46. GROUP BY
+47. HAVING
+48. Difference between WHERE and HAVING
+49. Aggregate vs scalar functions
+50. ROLLUP / CUBE (conceptual)
+
+SECTION 6: Joins (Concepts 51–60)
+Concepts
+51. What is a JOIN?
+52. INNER JOIN
+53. LEFT JOIN
+54. RIGHT JOIN
+55. FULL JOIN
+56. SELF JOIN
+57. CROSS JOIN
+58. Join vs Subquery
+59. Join conditions
+60. Common join mistakes
+
+SECTION 7: Subqueries & CTEs (Concepts 61–70)
+Concepts
+61. What is a subquery?
+62. Single-row subquery
+63. Multi-row subquery
+64. Correlated subquery
+65. EXISTS
+66. IN vs EXISTS
+67. Common Table Expression (CTE)
+68. Recursive CTE
+69. WITH clause
+70. CTE vs subquery
+
+SECTION 8: Indexes & Performance (Concepts 71–80)
+Concepts
+71. What is an index?
+72. Types of indexes
+73. Clustered vs non-clustered index
+74. Composite index
+75. When not to use index
+76. Query execution plan
+77. Performance tuning basics
+78. SELECT * vs column selection
+79. Normalization
+80. Denormalization
+
+SECTION 9: Transactions & ACID (Concepts 81–90)
+Concepts
+81. What is a transaction?
+82. ACID properties
+83. COMMIT
+84. ROLLBACK
+85. SAVEPOINT
+86. Auto-commit
+87. Isolation levels
+88. Dirty read
+89. Phantom read
+90. Deadlock
+
+SECTION 10: Views, Procedures & Functions (Concepts
+91–100)
+Concepts
+91. What is a view?
+92. Creating views
+93. Updating views
+94. Stored procedures
+95. Stored functions
+96. Parameters in procedures
+97. Triggers
+98. BEFORE vs AFTER trigger
+99. Use cases of triggers
+100. View vs table
+
+SECTION 11: Database Design & Security (Concepts
+101–120)
+Concepts
+101. Database normalization forms
+102. 1NF, 2NF, 3NF
+103. Star vs snowflake schema
+104. OLTP vs OLAP
+105. Data integrity
+106. Referential integrity
+107. Cascading actions
+108. SQL injection
+109. Preventing SQL injection
+110. User roles & privileges
+111. GRANT
+112. REVOKE
+113. Backup and restore
+114. Database migration
+115. Data consistency
+116. Locking
+117. Read vs write locks
+118. Partitioning
+119. Sharding (conceptual)
+120. Multi-tenant databases
+
+SECTION 12: Advanced SQL & Real-World Scenarios
+(Concepts 121–150)
+Concepts
+121. Window functions
+122. ROW_NUMBER()
+123. RANK() and DENSE_RANK()
+124. PARTITION BY
+125. LEAD and LAG
+126. Running totals
+127. Pivot and unpivot
+128. Date & time functions
+129. String functions
+130. JSON support in SQL
+131. Recursive queries
+132. Hierarchical data
+133. Pagination
+134. SQL for analytics
+135. Query refactoring
+136. Database monitoring
+137. Explain analyze
+138. Handling large datasets
+139. SQL in microservices
+140. SQL vs ORM
+141. MySQL vs PostgreSQL
+142. ACID vs BASE
+143. CAP theorem
+144. Data warehousing concepts
+145. Slowly changing dimensions
+146. Fact vs dimension tables
+147. Query anti-patterns
+148. Materialized views
+149. SQL best practices
+150. Real-world SQL interview scenarios
