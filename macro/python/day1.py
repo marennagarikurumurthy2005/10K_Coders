@@ -258,19 +258,56 @@
 # ● Slicing results
 
 
-l1=[1,2,34]
-# list modification
-l1[0]=20
-l1.append(204)
-print(l1[2:4])
-print(l1)
+# l1=[1,2,34]
+# # list modification
+# l1[0]=20
+# l1.append(204)
+# print(l1[2:4])
+# print(l1)
 
 
-t1=(1,2,3,4)
-t2=t1.__add__((20,30,50))
-print(t1)
-print(t2)
-print(t2[2:6:2])
+# t1=(1,2,3,4)
+# t2=t1.__add__((20,30,50))
+# print(t1)
+# print(t2)
+# print(t2[2:6:2])
+
+
+# Task 6: Mini Banking System
+# Objective: Build a basic banking system using OOP.
+# Mandatory Requirements:
+# ● Base class Account
+# ● Child class SavingsAccount
+# ● Private balance variable
+
+
+class Account:
+    def __init__(self):
+        self.bankname="SBI"
+        self.branch="Kothakota"
+    def bank_details(self):
+        print(self.bankname)
+        print(self.branch)
+
+class SavingsAccount(Account):
+    def __init__(self):
+        super().__init__()
+        self.username="Murthy"
+        self.acc_number="XXXXXXXX7125"
+        self.__savings=5000
+    
+    def balance(self):
+        super().bank_details()
+        print(self.username)
+        print(self.acc_number)
+        print(self.__savings)
+
+obj=SavingsAccount()
+obj.balance()
+
+        
+        
+
 
 
             
