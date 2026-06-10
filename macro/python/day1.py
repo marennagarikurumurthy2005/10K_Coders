@@ -142,41 +142,41 @@
 # # ● Use list comprehension
 # # ● Use decorator to log execution time
 
-from time import perf_counter
+# from time import perf_counter
 
-file=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
+# file=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
 
-def timer(func):
-    def wrapper(args):
-        start=perf_counter()
-        res=func(args)
-        end= perf_counter()
-        print(end-start)
-        return res
-    return wrapper
+# def timer(func):
+#     def wrapper(args):
+#         start=perf_counter()
+#         res=func(args)
+#         end= perf_counter()
+#         print(end-start)
+#         return res
+#     return wrapper
     
-def reading(file_name):
-    with open(file_name,'r') as file:
-        for line in file:
-            yield line
+# def reading(file_name):
+#     with open(file_name,'r') as file:
+#         for line in file:
+#             yield line
 
-@timer
-def func(file_name):
-    word_count=0
-    line_count=0
-    for line in reading(file_name):
-        line_count+=1
-        words=[word for word in line.split()]
-        word_count+=len(words)
-    print(line_count)
-    print(word_count)
+# @timer
+# def func(file_name):
+#     word_count=0
+#     line_count=0
+#     for line in reading(file_name):
+#         line_count+=1
+#         words=[word for word in line.split()]
+#         word_count+=len(words)
+#     print(line_count)
+#     print(word_count)
 
-try:
-    func(file)
-except Exception as e:
-    print(e)
-finally:
-    print("exicution completed")
+# try:
+#     func(file)
+# except Exception as e:
+#     print(e)
+# finally:
+#     print("exicution completed")
 
 
 
@@ -248,6 +248,29 @@ finally:
 #     print("Completion of process")
     
 
+
+# Task 5: Mutability & Scope Demo
+# Objective: Demonstrate mutability and scope behavior.
+# Input: List and tuple
+# Expected Output:
+# ● List modification reflected
+# ● Tuple unchanged
+# ● Slicing results
+
+
+l1=[1,2,34]
+# list modification
+l1[0]=20
+l1.append(204)
+print(l1[2:4])
+print(l1)
+
+
+t1=(1,2,3,4)
+t2=t1.__add__((20,30,50))
+print(t1)
+print(t2)
+print(t2[2:6:2])
 
 
             
