@@ -351,28 +351,123 @@
 #     print(i)
 
 
-file_path=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
-class myContext:
-    def __init__(self,file_name):
-        self.file_name=file_name
-    def __enter__(self):
+# file_path=r"C:\Users\maren\10KCoders\macro\python\kohli.txt"
+# class myContext:
+#     def __init__(self,file_name):
+#         self.file_name=file_name
+#     def __enter__(self):
 
-        self.data=open(self.file_name,'r')
-        print("file opened")
-        return self.data
+#         self.data=open(self.file_name,'r')
+#         print("file opened")
+#         return self.data
     
-    def __exit__(self, exc_type, exc, tb):
-        self.data.close()
-        print("file closed")
-        if exc_type is not None:
-            print(exc_type)
+#     def __exit__(self, exc_type, exc, tb):
+#         self.data.close()
+#         print("file closed")
+#         if exc_type is not None:
+#             print(exc_type)
     
-with myContext(file_path) as c:
-    raw=c.read()
-    print(raw)
+# with myContext(file_path) as c:
+#     raw=c.read()
+#     print(raw)
     
+
+
+# Task 8: Inventory Management System
+# Objective: Manage inventory using stacks, queues, and dictionaries.  
+#
+
+
+
+from collections import deque
+from abc import ABC,abstractmethod
+
+class Inventory(ABC):
+    
+    @abstractmethod
+    def item_sale(self,item="santoor"):
+        pass
+    
+    @abstractmethod
+    def add_item(self,item):
+        pass
+
+class Stack_implementation(Inventory):
+    def __init__(self):
+        self.soaps=["SANTOOR","ASSURE"]
+    def item_sale(self):
+        if len(self.soaps)>0:
+            x=self.soaps.pop()
+            return x,"take the soap"
+        else:
+            return "Soaps Out of Stock"
+    def add_item(self,item):
+        self.soaps.append(item)
+        return "Item added",self.soaps
+
+obj=Stack_implementation()
+x=obj.item_sale()
+print(x)
+
+class Queues_implementation(Inventory):
+    def __init__(self):
+        self.soaps=deque(["SANTOOR","ASSURE"])
+    def item_sale(self):
+        if len(self.soaps)>0:
+            x=self.soaps.popleft()
+            return x,"take the soap"
+        else:
+            return "Soaps Out of Stock"
+    def add_item(self,item):
+        self.soaps.append(item)
+        return "Item added",self.soaps
+obj=Queues_implementation()
+x=obj.add_item("LUX")
+print(x)
+
+
+
+class Dictonary_implementation(Inventory):
+    def __init__(self):
+        self.soaps={'SANTOOR':1, 'ASSURE':1, 'LUX':1}
+    
+    def item_sale(self, item="santoor"):
+        if item in self.soaps:
+            if self.soaps[item]>0:
+                self.soaps[item]-=1
+                return "take the soap",item
+            
+            else:
+                return  item,"soaps outof stock"
+        else:
+            return item,"soaps out of stock"
+    
+    def add_item(self, item):
+        if item in self.soaps:
+            self.soaps[item]+=1
+            return "soap added",self.soaps
+        else:
+            self.soaps[item]=1
+            return self.soaps
+
+obj=Dictonary_implementation()
+x=obj.add_item("LUX")
+print(x)  
+
+
+
+
 
         
+        
+
+        
+
+        
+
+
+
+
         
 
 
