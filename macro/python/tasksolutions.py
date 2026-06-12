@@ -456,58 +456,44 @@
 
 
 
-import re
+# import re
 
-pattern1=r".*ERROR.*"
-pattern2=r".*WARNING*."
-file_path=r"C:\Users\maren\10KCoders\macro\python\app.log"
+# pattern1=r".*ERROR.*"
+# pattern2=r".*WARNING*."
+# file_path=r"C:\Users\maren\10KCoders\macro\python\app.log"
 
-with open(file_path,'r') as file:
-    data=file.readlines()
-    # errors=list(filter(lambda line: re.match(pattern1,line),file))
-    # warnings=list(filter(lambda line: re.match(pattern2,line),file))
-
-
-
-errors=list(filter(lambda lines: re.match(pattern1,lines),data))
-warnings=list(filter(lambda lines:re.match(pattern2,lines),data))
-for i in errors:
-    print(i,end="")     
-print()
-for j in warnings:
-    print(j)       
+# with open(file_path,'r') as file:
+#     data=file.readlines()
+#     # errors=list(filter(lambda line: re.match(pattern1,line),file))
+#     # warnings=list(filter(lambda line: re.match(pattern2,line),file))
 
 
 
+# errors=list(filter(lambda lines: re.match(pattern1,lines),data))
+# warnings=list(filter(lambda lines:re.match(pattern2,lines),data))
+# for i in errors:
+#     print(i,end="")     
+# print()
+# for j in warnings:
+#     print(j)       
+
+
+# Task 10: CSV Data Analysis Pipeline
+# Objective: Load, clean, analyze, and process CSV data asynchronously
 
 
 
+# need to clarify
 
-
-
-        
-        
-
-        
-
-        
-
-
-
-
-        
-
-
-
-
-
-
-        
-    
-
-
-
-
-            
-
+# import numpy as np
+# import pandas as pd
+# import asyncio
+# import matplotlib.pyplot as plt
+# from time import perf_counter
+# file=r"C:\Users\maren\10KCoders\macro\python\sales.csv"
+# def Loader(a,b):
+#     x=pd.read_csv(file,nrows=b,skiprows=a) #skiprows=(),nrows=5
+#     Analyse(x)
+# async def Analyse():
+# asyncio.run(Analyse())
 
