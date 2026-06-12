@@ -458,13 +458,28 @@
 
 import re
 
-pattern=r".*ERROR.*"
+pattern1=r".*ERROR.*"
+pattern2=r".*WARNING*."
 file_path=r"C:\Users\maren\10KCoders\macro\python\app.log"
 
 with open(file_path,'r') as file:
-    errors=list(filter(lambda line: re.match(pattern,line),file))
+    data=file.readlines()
+    # errors=list(filter(lambda line: re.match(pattern1,line),file))
+    # warnings=list(filter(lambda line: re.match(pattern2,line),file))
+
+
+
+errors=list(filter(lambda lines: re.match(pattern1,lines),data))
+warnings=list(filter(lambda lines:re.match(pattern2,lines),data))
 for i in errors:
-    print(i,end="")             
+    print(i,end="")     
+print()
+for j in warnings:
+    print(j)       
+
+
+
+
 
 
 
