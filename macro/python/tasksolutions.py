@@ -379,80 +379,92 @@
 
 
 
-from collections import deque
-from abc import ABC,abstractmethod
+# from collections import deque
+# from abc import ABC,abstractmethod
 
-class Inventory(ABC):
+# class Inventory(ABC):
     
-    @abstractmethod
-    def item_sale(self,item="santoor"):
-        pass
+#     @abstractmethod
+#     def item_sale(self,item="santoor"):
+#         pass
     
-    @abstractmethod
-    def add_item(self,item):
-        pass
+#     @abstractmethod
+#     def add_item(self,item):
+#         pass
 
-class Stack_implementation(Inventory):
-    def __init__(self):
-        self.soaps=["SANTOOR","ASSURE"]
-    def item_sale(self):
-        if len(self.soaps)>0:
-            x=self.soaps.pop()
-            return x,"take the soap"
-        else:
-            return "Soaps Out of Stock"
-    def add_item(self,item):
-        self.soaps.append(item)
-        return "Item added",self.soaps
+# class Stack_implementation(Inventory):
+#     def __init__(self):
+#         self.soaps=["SANTOOR","ASSURE"]
+#     def item_sale(self):
+#         if len(self.soaps)>0:
+#             x=self.soaps.pop()
+#             return x,"take the soap"
+#         else:
+#             return "Soaps Out of Stock"
+#     def add_item(self,item):
+#         self.soaps.append(item)
+#         return "Item added",self.soaps
 
-obj=Stack_implementation()
-x=obj.item_sale()
-print(x)
+# obj=Stack_implementation()
+# x=obj.item_sale()
+# print(x)
 
-class Queues_implementation(Inventory):
-    def __init__(self):
-        self.soaps=deque(["SANTOOR","ASSURE"])
-    def item_sale(self):
-        if len(self.soaps)>0:
-            x=self.soaps.popleft()
-            return x,"take the soap"
-        else:
-            return "Soaps Out of Stock"
-    def add_item(self,item):
-        self.soaps.append(item)
-        return "Item added",self.soaps
-obj=Queues_implementation()
-x=obj.add_item("LUX")
-print(x)
+# class Queues_implementation(Inventory):
+#     def __init__(self):
+#         self.soaps=deque(["SANTOOR","ASSURE"])
+#     def item_sale(self):
+#         if len(self.soaps)>0:
+#             x=self.soaps.popleft()
+#             return x,"take the soap"
+#         else:
+#             return "Soaps Out of Stock"
+#     def add_item(self,item):
+#         self.soaps.append(item)
+#         return "Item added",self.soaps
+# obj=Queues_implementation()
+# x=obj.add_item("LUX")
+# print(x)
 
 
 
-class Dictonary_implementation(Inventory):
-    def __init__(self):
-        self.soaps={'SANTOOR':1, 'ASSURE':1, 'LUX':1}
+# class Dictonary_implementation(Inventory):
+#     def __init__(self):
+#         self.soaps={'SANTOOR':1, 'ASSURE':1, 'LUX':1}
     
-    def item_sale(self, item="santoor"):
-        if item in self.soaps:
-            if self.soaps[item]>0:
-                self.soaps[item]-=1
-                return "take the soap",item
+#     def item_sale(self, item="santoor"):
+#         if item in self.soaps:
+#             if self.soaps[item]>0:
+#                 self.soaps[item]-=1
+#                 return "take the soap",item
             
-            else:
-                return  item,"soaps outof stock"
-        else:
-            return item,"soaps out of stock"
+#             else:
+#                 return  item,"soaps outof stock"
+#         else:
+#             return item,"soaps out of stock"
     
-    def add_item(self, item):
-        if item in self.soaps:
-            self.soaps[item]+=1
-            return "soap added",self.soaps
-        else:
-            self.soaps[item]=1
-            return self.soaps
+#     def add_item(self, item):
+#         if item in self.soaps:
+#             self.soaps[item]+=1
+#             return "soap added",self.soaps
+#         else:
+#             self.soaps[item]=1
+#             return self.soaps
 
-obj=Dictonary_implementation()
-x=obj.add_item("LUX")
-print(x)  
+# obj=Dictonary_implementation()
+# x=obj.add_item("LUX")
+# print(x)  
+
+
+
+import re
+
+pattern=r".*ERROR.*"
+file_path=r"C:\Users\maren\10KCoders\macro\python\app.log"
+
+with open(file_path,'r') as file:
+    errors=list(filter(lambda line: re.match(pattern,line),file))
+for i in errors:
+    print(i,end="")             
 
 
 

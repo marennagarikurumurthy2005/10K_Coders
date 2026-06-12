@@ -1,0 +1,6 @@
+2026-06-12 10:00:01 INFO User login successful
+2026-06-12 10:01:15 ERROR Database connection failed
+2026-06-12 10:02:30 WARNING Low disk space
+2026-06-12 10:03:45 ERROR Invalid credentials
+2026-06-12 10:04:50 INFO Payment processed
+2026-06-12 10:05:20 ERROR File not found
