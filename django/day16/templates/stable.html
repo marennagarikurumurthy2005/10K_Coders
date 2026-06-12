@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border:2px solid;>
+        <tr><td>Id</td>
+        <td>Name</td>
+        <td>Age</td>
+        <td>Address</td></tr>
+        {% for i in data %}
+        
+        <tr>
+    <td><a href="{% url "stupdate" i.id %}">{{i.id}}</a></td>
+    <td>{{i.name}}</td>
+    <td>{{i.age}}</td>
+    <td>{{i.address}}</td>
+        </tr>
+
+        {% endfor %}
+    </table>
+
+</body>
+</html>
