@@ -72,3 +72,24 @@ DELETE  FROM employee
 WHERE department is NULL;
 
 
+-- Task 4: Employee Filtering Queries
+-- Objective: Filter and categorize employee data.
+-- Requirements:
+-- ● Find employees with salary between a range
+-- ● Search names using LIKE
+-- ● Categorize employees using CASE
+
+SELECT * from employee
+WHERE salary BETWEEN 60000 and 95000;
+
+SELECT * from employee 
+WHERE name LIKE 'k%';
+
+SELECT *,
+case 
+    when salary>80000 THEN "Grade A"
+    when salary >60000 THEN "Grade B"
+    Else "Grade C" 
+END as Grade
+from employee;
+
