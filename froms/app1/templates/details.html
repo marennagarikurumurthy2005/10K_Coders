@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border:1px solid red0>
+        <tr>
+            <th>Id</th>
+            <th>Door Number</th>
+            <th>Total Members</th>
+            <th>Head</th>
+            <th>Annual Income</th>
+            <th></th>
+        </tr>
+        {% for i in form %}
+
+        <tr>
+            <td><a href="{% url "update" i.id %}">{{i.id}}</a></td>
+        <td>{{i.doornum}}</td>
+        <td>{{i.mem}}</td>
+        <td>{{i.famhead}}</td>
+        <td>{{i.income}}</td>
+        <td><a href="{% url "delete" i.id %}">Delete</a></td>
+
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
