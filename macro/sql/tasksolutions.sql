@@ -194,6 +194,31 @@ with empcte as (
 SELECT * FROM empcte;
 
 
+-- Task 8: Query Optimization
+-- Objective: Improve query performance.
+-- Requirements:
+-- ● Create index on salary
+-- ● Compare query performance before and after index
+
+SELECT * from employee;
+
+EXPLAIN
+SELECT * from employee
+WHERE emp_name='Neha';
+-- -> Filter: (employee.emp_name = 'Neha')  (cost=1.05 rows=1)
+--     -> Table scan on employee  (cost=1.05 rows=8)
+
+CREATE INDEX name_index
+on employee(emp_name);
+
+EXPLAIN
+SELECT * from employee
+WHERE emp_name='Neha';
+
+-- -> Index lookup on employee using name_index (emp_name = 'Neha')  (cost=0.35 rows=1)
+
+
+
 
 
 
