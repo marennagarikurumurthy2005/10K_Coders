@@ -93,3 +93,85 @@ case
 END as Grade
 from employee;
 
+
+-- Task 5: Salary Analysis
+-- Objective: Analyze salary data using aggregates.
+-- Requirements:
+-- ● Find average salary per department
+-- ● Show departments with average salary above a threshold
+
+INSERT INTO employee(name,age,department,salary) VALUES('Bhargav',23,'SWE',45624);
+
+SELECT * from employee;
+SELECT department , AVG(salary), COUNT(department)
+from employee
+GROUP BY (department);
+
+SELECT department , AVG(salary) as AVG_SAL
+from employee
+GROUP BY department
+HAVING AVG(salary)>50000;
+
+
+-- rollup
+SELECT department , SUM(salary)
+from employee
+GROUP BY ROLLUP(department);
+
+-- cube not supported in mysql
+
+-- SELECT department,SUM(salary)
+-- from employee
+-- GROUP BY CUBE(department);
+
+
+-- Task 6: Employee & Department Join
+-- Objective: Combine data from multiple tables.
+-- Requirements:
+-- ● Create departments table
+-- ● Fetch employee names with department names
+-- ● Include employees without department
+
+drop Table employee;
+drop table department;
+
+
+CREATE TABLE department (
+    dept_id INT PRIMARY KEY,
+    dept_name VARCHAR(50),
+    location VARCHAR(50)
+);
+INSERT INTO department VALUES
+(101, 'HR', 'Hyderabad'),
+(102, 'IT', 'Bangalore'),
+(103, 'Finance', 'Mumbai'),
+(104, 'Sales', 'Delhi'),
+(105, 'Marketing', 'Chennai');
+
+CREATE TABLE employee (
+    emp_id INT PRIMARY KEY,
+    emp_name VARCHAR(50) NOT NULL,
+    salary DECIMAL(10,2),
+    dept_id INT,
+    FOREIGN KEY (dept_id) REFERENCES department(dept_id)
+);
+
+INSERT INTO employee VALUES
+(1, 'Rahul', 50000, 102),
+(2, 'Priya', 60000, 101),
+(3, 'Amit', 55000, 102),
+(4, 'Neha', 45000, 103),
+(5, 'Vikram', 70000, 104),
+(6, 'Sneha', 48000, NULL),
+(7, 'Arjun', 52000, 102),
+(8, 'Kavya', 65000, NULL);
+
+SELECT employee.emp_name, department.dept_name
+from employee
+INNER JOIN department
+on employee.dept_id=department.dept_id;
+
+SELECT employee.emp_name,department.dept_name
+from employee
+LEFT JOIN department
+on employee.dept_id=department.dept_id;
