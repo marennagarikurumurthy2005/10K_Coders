@@ -175,3 +175,25 @@ SELECT employee.emp_name,department.dept_name
 from employee
 LEFT JOIN department
 on employee.dept_id=department.dept_id;
+
+
+-- Task 7: Advanced Salary Queries
+-- Objective: Use subqueries and CTEs for complex logic.
+-- Requirements:
+-- ● Find employees earning more than average salary
+-- ● Use CTE to rank salaries
+
+SELECT * from employee
+WHERE salary>(SELECT AVG(salary) from employee);
+
+with empcte as (
+    SELECT * ,
+    RANK() OVER(ORDER BY salary DESC)
+    from employee
+)
+SELECT * FROM empcte;
+
+
+
+
+
