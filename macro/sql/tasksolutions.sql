@@ -236,8 +236,77 @@ COMMIT;
 SELECT * from employee;
 
 
+-- Task 10: Automation Using SQL Objects
+-- Objective: Automate database logic.
+-- Requirements:
+-- ● Create a view for high-salary employees
+-- ● Create a trigger to log salary changes
+-- stored procedures, stored functions
+
+CREATE View salary_view as 
+SELECT DISTINCT salary
+FROM employee
+ORDER BY salary DESC
+LIMIT 1 OFFSET 1;
+SELECT * FROM salary_view;
+create view rowsal_view AS
+SELECT * FROM employee
+WHERE salary=(SELECT max(salary) from employee);
+SELECT * FROM rowsal_view;
+
+CREATE table sal_update(emp_id int,updatedto DECIMAL(10,2),update_at DATETIME DEFAULT CURRENT_TIMESTAMP);
+DELIMITER //
+CREATE Trigger sal_update_trigger
+AFTER UPDATE
+on employee
+for each row  
+begin
+INSERT INTO sal_update(emp_id,updatedto,update_at)
+VALUES(new.emp_id,new.salary,NOW());
+END//
+DELIMITER;
+UPDATE employee
+set salary=96000
+WHERE emp_id=1;
+-- DROP Trigger sal_update_trigger;
+SELECT * from sal_update;
 
 
+DELIMITER//
+CREATE Procedure fetch_deta()
+begin
+SELECT * from sal_update;
+END//
+DELIMITER;
 
+CALL fetch_deta()
+
+
+DELIMITER //
+CREATE PROCEDURE id_based_fetch(
+ in emp_ids int
+)
+BEGIN
+SELECT * from employee
+WHERE emp_id=emp_ids ;
+END //
+DELIMITER ;
+
+CALL id_based_fetch(5)
+
+
+DELIMITER //
+CREATE Function bonus(
+    salary DECIMAL(10,2)
+)
+RETURNS  DECIMAL(10,2)
+DETERMINISTIC
+begin
+RETURN salary*0.10;
+END//
+
+DELIMITER ;
+
+SELECT bonus(5000);
 
 
