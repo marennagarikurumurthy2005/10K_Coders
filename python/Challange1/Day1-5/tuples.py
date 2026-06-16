@@ -37,7 +37,3 @@ else:
 
 
 
-# sirigadderevathi@gmail.com             revathi@1909
-# marennagarikurumurthy2005@gmail.com    murthy@0903 
-
-

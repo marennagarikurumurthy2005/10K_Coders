@@ -98,16 +98,7 @@ print(new_string)
 
 
 
-def web():
 
-    request="open in desktop only if full screen "
-
-    site="https://srevathi.vercel.app/  ( or ) srevathi.vercel.app"
-    mail1="marennagarikurumurthy2005@gmail.com"
-    password1="murthy@0903"
-    mail2="sirigadderevathi@gmail.com"
-    password2="revathi@1909"
-    slam="writeformk.vercel.app  (or)  https://writeformk.vercel.app/ "
 
     
 
