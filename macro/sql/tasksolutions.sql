@@ -217,6 +217,25 @@ WHERE emp_name='Neha';
 
 -- -> Index lookup on employee using name_index (emp_name = 'Neha')  (cost=0.35 rows=1)
 
+-- Task 9: Transaction Simulation
+-- Objective: Demonstrate transaction behavior.
+-- Requirements:
+-- ● Update salary and rollback
+-- ● Use savepoint and commit partially
+
+
+SELECT * from employee;
+SET autocommit = 0;
+START TRANSACTION;
+SAVEPOINT a1;
+UPDATE employee
+SET salary = 75000
+WHERE emp_id = 3;
+ROLLBACK TO SAVEPOINT a1;
+COMMIT;
+SELECT * from employee;
+
+
 
 
 
