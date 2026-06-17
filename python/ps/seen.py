@@ -55,12 +55,24 @@ dici={
     "eight":'8',
     "nine":'9'
 }
-sub=""
-num=""
-for i in s:
-    sub+=i
-    if sub in dici:
-        num=num+dici[sub]
-        sub=""
+# sub=""
+# num=""
+# for i in s:
+#     sub+=i
+#     if sub in dici:
+#         num=num+dici[sub]
+#         sub=""
+# print(num)
+i=0
+j=1
+num=0
+while j<=len(s):
+    if s[i:j] in dici:
+        num=num*10+int(dici[s[i:j]])
+        i=j
+    else:
+        j+=1
 print(num)
+
     
+
