@@ -309,5 +309,68 @@ DELIMITER ;
 
 SELECT bonus(5000);
 
+SELECT * FROM employee;
+
+
+-- Objective: Design and secure a database.
+-- Requirements:
+-- ● Normalize employee schema to 3NF
+-- ● Create read-only and admin users
+-- ● Demonstrate GRANT and REVOKE
+
+
+CREATE TABLE stdet(
+    student_id INT,
+    student_name VARCHAR(50),
+    student_phone VARCHAR(100),
+    course_id INT,
+    course_name VARCHAR(50),
+    instructor_name VARCHAR(50),
+    instructor_phone VARCHAR(20),
+    fee DECIMAL(10,2)
+);
+
+TRUNCATE Table stdet;
+
+INSERT INTO stdet VALUES
+(1,'Murthy','9876543210,9123456789',101,'Python','Ravi','9001112222',5000),
+(1,'Murthy','9876543210,9123456789',102,'SQL','Kiran','9002223333',4000),
+(2,'Revanth','9988776655',101,'Python','Ravi','9001112222',5000),
+(3,'Rahul','9871234567',103,'Power BI','Anil','9003334444',6000);
+
+SELECT * FROM stdet;
+
+CREATE TABLE stdet1nf(
+    student_id INT,
+    student_name VARCHAR(50),
+    student_phone VARCHAR(100),
+    course_id INT,
+    course_name VARCHAR(50),
+    instructor_name VARCHAR(50),
+    instructor_phone VARCHAR(20),
+    fee DECIMAL(10,2)
+);
+
+INSERT INTO stdet1nf VALUES
+(1,'Murthy','9123456789',101,'Python','Ravi','9001112222',5000),
+(1,'Murthy','9876543210',101,'Python','Ravi','9001112222',5000),
+(1,'Murthy','9876543210',102,'SQL','Kiran','9002223333',4000),
+(1,'Murthy','9123456789',102,'SQL','Kiran','9002223333',4000),
+(2,'Revanth','9988776655',101,'Python','Ravi','9001112222',5000),
+(3,'Rahul','9871234567',103,'Power BI','Anil','9003334444',6000);
+
+SELECT * FROM stdet1nf;
+
+
+
+
+
+
+
+
+
+
+
+
 
 
