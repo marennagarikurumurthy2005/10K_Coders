@@ -361,6 +361,10 @@ INSERT INTO stdet1nf VALUES
 
 SELECT * FROM stdet1nf;
 
+create table t1()
+
+
+
 
 
 
