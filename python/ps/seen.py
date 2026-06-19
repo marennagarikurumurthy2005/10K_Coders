@@ -152,7 +152,7 @@
 #         li1.append(i)
 # print(li1+li2)
 
-name="VaIsHnAvI"
+# name="VaIsHnAvI"
 # s1=""
 # s2=""
 # for i in name:
@@ -163,18 +163,29 @@ name="VaIsHnAvI"
 # print(s1+s2)
 
 
-dici={"u":0,"l":0}
+# dici={"u":0,"l":0}
 
-for i in name:
-    if 'A'<=i<='Z':
-        dici["u"]+=1
-    elif 'a'<=i<='z':
-        dici['l']+=1
-print(dici)
- 
-
-    
+# for i in name:
+#     if 'A'<=i<='Z':
+#         dici["u"]+=1
+#     elif 'a'<=i<='z':
+#         dici['l']+=1
+# print(dici)
 
 
-    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
