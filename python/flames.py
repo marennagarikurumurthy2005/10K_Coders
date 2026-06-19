@@ -35,48 +35,60 @@
 
 # print(flames[slam_list[0]])
 
+print("Flames")
+while True:
+    print()
+    data=int(input("Enter 1 to continue:"))
+    if data==1:
+        name1 = input("Enter your name: ").upper()
+        name2 = input("Enter your LOVE's name: ").upper()
 
-name1 = input("Enter your name: ").upper()
-name2 = input("Enter your LOVE's name: ").upper()
+        slamletters = ""
 
-slamletters = ""
+        for i in name1:
+            if i not in name2:
+                slamletters += i
 
-for i in name1:
-    if i not in name2:
-        slamletters += i
+        for j in name2:
+            if j not in name1:
+                slamletters += j
 
-for j in name2:
-    if j not in name1:
-        slamletters += j
+        slam_without_duplicates = ""
 
-slam_without_duplicates = ""
+        for i in slamletters:
+            if i not in slam_without_duplicates:
+                slam_without_duplicates += i
 
-for i in slamletters:
-    if i not in slam_without_duplicates:
-        slam_without_duplicates += i
+        count = len(slam_without_duplicates)
 
-count = len(slam_without_duplicates)
+        flames_list = ['F', 'L', 'A', 'M', 'E', 'S']
 
-flames_list = ['F', 'L', 'A', 'M', 'E', 'S']
+        index = 0
 
-index = 0
+        while len(flames_list) > 1:
+            index = (index + count - 1) % len(flames_list)
+            flames_list.pop(index)
 
-while len(flames_list) > 1:
-    index = (index + count - 1) % len(flames_list)
-    flames_list.pop(index)
+        flames = {
+            "F": "Friends",
+            "L": "Love",
+            "A": "Attraction",
+            "M": "Marriage",
+            "E": "Enemies (Wife & Husband)",
+            "S": "Soulmates"
+        }
 
-flames = {
-    "F": "Friends",
-    "L": "Love",
-    "A": "Attraction",
-    "M": "Marriage",
-    "E": "Enemies",
-    "S": "Soulmates"
-}
+        # print("Remaining Letter:", flames_list[0])
 
-print("Remaining Letter:", flames_list[0])
+        print("Relationship:", flames[flames_list[0]])
+    
+    elif data==2:
+        print("You choose exit")
+        break
+    else:
+        print("Invalid input")
+        break
 
-print("Relationship:", flames[flames_list[0]])
 
 
 
