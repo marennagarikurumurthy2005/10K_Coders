@@ -46,11 +46,11 @@ while True:
         slamletters = ""
 
         for i in name1:
-            if i not in name2:
+            if i!=" " and i not in name2:
                 slamletters += i
 
         for j in name2:
-            if j not in name1:
+            if j!=" " and j not in name1:
                 slamletters += j
 
         slam_without_duplicates = ""
