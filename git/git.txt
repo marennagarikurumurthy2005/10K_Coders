@@ -1,0 +1,44 @@
+git 
+# with cloning and without cloning
+
+
+git config --global user.name "username"
+git config --global user.email "email"
+git config --global --list
+
+with cloning method
+git clone url
+git add .
+git commit -m "message"
+git push -u origin main
+
+# without cloning
+git init
+git add .
+git commit -m "message"
+git remote add origin url
+git branch -M main
+git push -u origin main
+
+git pull origin main / git pull
+git pull url
+
+
+
+
+# branching
+git pull url
+git remote add orgin url
+git branch -M murthy
+git branch
+git checkout "branck name"
+git push -u origin branch_name
+git branch -d branch_name
+redirect to main then-> git merge branch_name 
+
+
+git restore --staged .
+git restore --staged file_name
+
+git rm --cached filename 
+git rm --cached .
