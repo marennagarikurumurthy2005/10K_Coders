@@ -1,0 +1,5 @@
+git 
+# git with cloning method and without cloning method
+
+with cloning method:
+# git clone url
