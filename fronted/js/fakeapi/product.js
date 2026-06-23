@@ -20,10 +20,15 @@ getProduct();
 
 async function getProduct() {
 
-    const params =
-        new URLSearchParams(window.location.search);
+    // const params =
+    //     new URLSearchParams(window.location.search);
 
-    const productId = params.get("id");
+    // const productId = params.get("id");
+
+
+    const param= new URLSearchParams(window.location.search);
+
+    const productId=param.get('id');
 
     const res = await fetch(
         `https://fakestoreapi.com/products/${productId}`

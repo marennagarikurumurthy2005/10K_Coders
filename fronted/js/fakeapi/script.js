@@ -38,13 +38,22 @@ async function getProducts() {
 
             container.appendChild(card);
 
-            card.addEventListener("click", () => {
-                window.location.href =
-                `single.html?id=${product.id}`;
+            // card.addEventListener("click", () => {
+            //     window.location.href =
+            //     `single.html?id=${product.id}`;
 
 
 
-});
+        
+
+
+
+// });
+
+
+        card.addEventListener('click',()=>{
+            window.location.href=`single.html?id=${product.id}`
+        })
 
         });
 
