@@ -26,7 +26,28 @@ def create(request):
 
 @csrf_exempt
 def login(request):
-    pass
+    requested_data = json.loads(request.body)
+    username = requested_data['username']
+    password = requested_data['password']
+    # print(username,password)
+    encoded=password.encode('utf-8')
+    try:
+        db_data=Employee.objects.get(username=username)
+    except Employee.DoesNotExist:
+        return JsonResponse({"response": "user not found"})
+    db_password = db_data.password.encode('utf-8')
+    if bcrypt.checkpw(encoded,db_password):
+        return JsonResponse(
+              {
+            'response': {
+                'username': db_data.username,
+                'name': db_data.name,
+                'age': db_data.age
+            }
+        }    
+        )
+    return JsonResponse({'response':'password incorrect'})
+
 
 @csrf_exempt
 def update(request):
