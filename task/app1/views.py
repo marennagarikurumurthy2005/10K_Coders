@@ -18,10 +18,22 @@ def create(request):
     return JsonResponse(sdata.errors)
     
 def update(request,id):
-    pass
+    raw_data=json.loads(request.body)
+    db_data=Todomodel.objects.get(id=id)
+
+    data=TodomodelSerializer(db_data,raw_data,partial=True)
+
+    if data.is_valid():
+        data.save()
+        return JsonResponse({"status":"updated successfully"})
+    return JsonResponse(data.errors)
+
 
 def delete(request,id):
-    pass
+
+    data=Todomodel.objects.get(id=id)
+    data.delete()
+    return JsonResponse({"status":"task deleted successfully"})
 
 
 def home(request):
