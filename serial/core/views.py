@@ -5,6 +5,8 @@ from django.http import JsonResponse
 import bcrypt
 from django.views.decorators.csrf import csrf_exempt
 from .serializer import EmployeeSerializer
+from .passwords import paw_hashing
+
 
 # Create your views here.
 
@@ -13,9 +15,7 @@ from .serializer import EmployeeSerializer
 @csrf_exempt
 def create(request):
     request_data = json.loads(request.body)
-    password_from_request = request_data['password'].encode('utf-8')
-    salt = bcrypt.gensalt(rounds=12)
-    request_data['password'] = bcrypt.hashpw(password_from_request,salt).decode('utf-8')
+    request_data['password']=paw_hashing(request_data['password'])
     ser_data=EmployeeSerializer(data=request_data)
     if ser_data.is_valid():
         ser_data.save()
@@ -39,7 +39,7 @@ def login(request):
     db_password = db_data.password.encode('utf-8')
     
     if bcrypt.checkpw(encoded,db_password):
-        return JsonResponse(
+        response= JsonResponse(
               {
             'response': {
                 'username':data['username'],
@@ -48,11 +48,19 @@ def login(request):
             }
         }    
         )
+        response.set_cookie(
+            key='is_login',
+            value=True,
+            max_age=60
+        )
+        return response
     return JsonResponse({'response':'password incorrect'})
 
 
 @csrf_exempt
-def update(request):
-    pass
+def home(request):
+    if bool(request.COOKIES.get('is_login')):
+        return JsonResponse({'status':"welcome to dashboard"})
+    return JsonResponse({'status':"Login cheyra hooka😁"})
 
 
