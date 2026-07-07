@@ -21,3 +21,4 @@ def get_session(request):
         request.session.flush()
         return JsonResponse({'status':'session deleted'})
     return JsonResponse({'status':'cant find session'})
+
