@@ -23,6 +23,7 @@ def register(request):
     return JsonResponse({'status':"invalid password match"})
 
 
+@csrf_exempt
 def login(request):
     data_comming = json.loads(request.body)
     user=data_comming['username']
@@ -37,14 +38,18 @@ def login(request):
             value=True,
             max_age=60*5
         )
+        request.session['username']="Murthy"
         return response
 
+@csrf_exempt
 def logout(request):
     response=JsonResponse({'status':'logout successful'})
     response.delete_cookie('permission')
     return response
     pass
 
+
+@csrf_exempt
 def add_student(request):
     if bool(request.COOKIES.get('permission')):
         response=json.loads(request.body)
@@ -55,7 +60,7 @@ def add_student(request):
         return JsonResponse({'status':adding.errors})
     return JsonResponse({'note':'login cheyra Hooka'})
 
-    
+@csrf_exempt 
 def delete_student(request,id):
     if bool(request.COOKIES.get('permission')):
         data=get_object_or_404(Students,id=id)
@@ -64,6 +69,7 @@ def delete_student(request,id):
 
     return JsonResponse({'note':'login cheyra Hooka'})
 
+@csrf_exempt
 def update_student(request,id):
     if bool(request.COOKIES.get('permission')):
         raw_data=json.loads(request.body)
@@ -76,6 +82,7 @@ def update_student(request,id):
     return JsonResponse({'note':'login cheyra Hooka'})
 
     pass
+
 
 def home(request):
     if bool(request.COOKIES.get('permission')):

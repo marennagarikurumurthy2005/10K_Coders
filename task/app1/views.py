@@ -16,7 +16,8 @@ def create(request):
         sdata.save()
         return JsonResponse({"status":"todo created"})
     return JsonResponse(sdata.errors)
-    
+
+@csrf_exempt
 def update(request,id):
     raw_data=json.loads(request.body)
     db_data=Todomodel.objects.get(id=id)
@@ -28,7 +29,7 @@ def update(request,id):
         return JsonResponse({"status":"updated successfully"})
     return JsonResponse(data.errors)
 
-
+@csrf_exempt
 def delete(request,id):
 
     data=Todomodel.objects.get(id=id)

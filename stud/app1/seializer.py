@@ -6,7 +6,6 @@ class userSerializer(serializers.ModelSerializer):
     class Meta:
         model=Users
         fields='__all__'
-    
     def validate(self, attrs):
         if attrs['password']!=attrs['repassword']:
             raise serializers.ValidationError('password does not matched')
