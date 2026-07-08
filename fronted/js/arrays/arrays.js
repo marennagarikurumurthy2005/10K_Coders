@@ -49,8 +49,9 @@
 
 // console.log(arr);
 
-
-
+let arr=document.getElementById('')
+let arr2 = document.getelementbyClass()
+let arr3 = document.querySelector('.classname')
 
 
 
