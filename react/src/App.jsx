@@ -1,5 +1,7 @@
 import React from 'react'
-import Profile from './components/Profile'
+import Fake from './components/Fake';
+import Counter from './components/Counter';
+// import Profile from './components/Profile'
 
 const users = [
   {
@@ -49,7 +51,10 @@ const users = [
 const App = () => {
   return (
     <div>
-      <Profile users={users}/>
+      {/* <Profile users={users}/> */}
+      {/* <Fake/> */}
+      <Counter />
+
     </div>
   )
 }
